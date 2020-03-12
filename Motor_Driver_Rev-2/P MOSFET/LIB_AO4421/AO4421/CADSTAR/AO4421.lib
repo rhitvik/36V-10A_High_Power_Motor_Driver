@@ -1,0 +1,18 @@
+.AO4421 :1 ;MOSFET P-CH 60V 6.2A 8SOIC
+SOIC127P600X175-8N
+*STM IC
+*NGS
+*PLB 1="S_1" 2="S_2" 3="S_3" 4="G" 5="D_1" 6="D_2" 7="D_3" 8="D_4"
+*MXP 8
+*DFN AO4421
+~!Manufacturer_Name (Alpha & Omega Semiconductors)
+~!Manufacturer_Part_Number (AO4421)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (http://www.aosmd.com/res/data_sheets/AO4421.pdf)
+~!Height (1.75mm)
+~!3D_Model (AO4421)
+AO4421
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

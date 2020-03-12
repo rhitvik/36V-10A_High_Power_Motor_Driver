@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1\Motor_Driver_Rev-1.sch</source>
+    <date>3/4/2020 3:11:47 AM</date>
+    <tool>Eeschema (5.1.4)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Motor_Driver_Rev-1.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Q3">
+      <value>SI7850DP-T1-GE3</value>
+      <footprint>SOIC127P615X112-9N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf</datasheet>
+      <fields>
+        <field name="Description">VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL</field>
+        <field name="Height">1.12</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7850DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7850DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3</field>
+      </fields>
+      <libsource lib="SI7850DP-T1-GE3" part="SI7850DP-T1-GE3" description="VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5DF3FD</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>AO4421</value>
+      <footprint>SOIC127P600X175-8N</footprint>
+      <datasheet>http://www.aosmd.com/res/data_sheets/AO4421.pdf</datasheet>
+      <fields>
+        <field name="Description">MOSFET P-CH 60V 6.2A 8SOIC</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Alpha &amp; Omega Semiconductors</field>
+        <field name="Manufacturer_Part_Number">AO4421</field>
+      </fields>
+      <libsource lib="AO4421" part="AO4421" description="MOSFET P-CH 60V 6.2A 8SOIC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5E0F58</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BC846BLT3G</value>
+      <footprint>SOT96P237X111-3N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF</datasheet>
+      <fields>
+        <field name="Height">1.11</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BC846BLT3G</field>
+        <field name="Mouser Part Number">863-BC846BLT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G</field>
+        <field name="RS Part Number">7737611P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7737611P</field>
+      </fields>
+      <libsource lib="BC846BLT3G" part="BC846BLT3G" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5E2A23</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>2.2k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5EE2AE</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>330</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5F20A1</tstamp>
+    </comp>
+    <comp ref="Z1">
+      <value>1SMA5930BT3G</value>
+      <footprint>DIOM5226X220N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF</datasheet>
+      <fields>
+        <field name="Description">ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA</field>
+        <field name="Height">2.2</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">1SMA5930BT3G</field>
+        <field name="Mouser Part Number">863-1SMA5930BT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-1SMA5930BT3G</field>
+        <field name="RS Part Number">7925353</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7925353</field>
+      </fields>
+      <libsource lib="1SMA5930BT3G" part="1SMA5930BT3G" description="ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5F2D8D</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E612868</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>AO4421</value>
+      <footprint>SOIC127P600X175-8N</footprint>
+      <datasheet>http://www.aosmd.com/res/data_sheets/AO4421.pdf</datasheet>
+      <fields>
+        <field name="Description">MOSFET P-CH 60V 6.2A 8SOIC</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Alpha &amp; Omega Semiconductors</field>
+        <field name="Manufacturer_Part_Number">AO4421</field>
+      </fields>
+      <libsource lib="AO4421" part="AO4421" description="MOSFET P-CH 60V 6.2A 8SOIC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E629B77</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BC846BLT3G</value>
+      <footprint>SOT96P237X111-3N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF</datasheet>
+      <fields>
+        <field name="Height">1.11</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BC846BLT3G</field>
+        <field name="Mouser Part Number">863-BC846BLT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G</field>
+        <field name="RS Part Number">7737611P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7737611P</field>
+      </fields>
+      <libsource lib="BC846BLT3G" part="BC846BLT3G" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E629B85</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>2.2k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E629B9B</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>330</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E629BA7</tstamp>
+    </comp>
+    <comp ref="Z2">
+      <value>1SMA5930BT3G</value>
+      <footprint>DIOM5226X220N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF</datasheet>
+      <fields>
+        <field name="Description">ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA</field>
+        <field name="Height">2.2</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">1SMA5930BT3G</field>
+        <field name="Mouser Part Number">863-1SMA5930BT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-1SMA5930BT3G</field>
+        <field name="RS Part Number">7925353</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7925353</field>
+      </fields>
+      <libsource lib="1SMA5930BT3G" part="1SMA5930BT3G" description="ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E629BB7</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E62C304</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MMBT3904-7-F</value>
+      <footprint>SOT-23</footprint>
+      <libsource lib="2020-03-04_01-47-19" part="MMBT3904-7-F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5F2832</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>MMBT3906-7-F</value>
+      <footprint>SOT-23</footprint>
+      <libsource lib="2020-03-04_01-49-45" part="MMBT3906-7-F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5F3CAE</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5F8240</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>400</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E60B131</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>320</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E60EC96</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1.2K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E5F7683</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>1935161</value>
+      <footprint>PHOENIX_1935161</footprint>
+      <datasheet>Phoenix Contact</datasheet>
+      <libsource lib="1935161" part="1935161" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E62A1F5</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>1935161</value>
+      <footprint>PHOENIX_1935161</footprint>
+      <datasheet>Phoenix Contact</datasheet>
+      <libsource lib="1935161" part="1935161" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E63858D</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>SI7850DP-T1-GE3</value>
+      <footprint>SOIC127P615X112-9N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf</datasheet>
+      <fields>
+        <field name="Description">VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL</field>
+        <field name="Height">1.12</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7850DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7850DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3</field>
+      </fields>
+      <libsource lib="SI7850DP-T1-GE3" part="SI7850DP-T1-GE3" description="VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E51CD</tstamp>
+    </comp>
+    <comp ref="IC4">
+      <value>AO4421</value>
+      <footprint>SOIC127P600X175-8N</footprint>
+      <datasheet>http://www.aosmd.com/res/data_sheets/AO4421.pdf</datasheet>
+      <fields>
+        <field name="Description">MOSFET P-CH 60V 6.2A 8SOIC</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Alpha &amp; Omega Semiconductors</field>
+        <field name="Manufacturer_Part_Number">AO4421</field>
+      </fields>
+      <libsource lib="AO4421" part="AO4421" description="MOSFET P-CH 60V 6.2A 8SOIC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E51DB</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>BC846BLT3G</value>
+      <footprint>SOT96P237X111-3N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF</datasheet>
+      <fields>
+        <field name="Height">1.11</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BC846BLT3G</field>
+        <field name="Mouser Part Number">863-BC846BLT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G</field>
+        <field name="RS Part Number">7737611P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7737611P</field>
+      </fields>
+      <libsource lib="BC846BLT3G" part="BC846BLT3G" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E51E9</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>2.2k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E51FF</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>330</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E520B</tstamp>
+    </comp>
+    <comp ref="Z3">
+      <value>1SMA5930BT3G</value>
+      <footprint>DIOM5226X220N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF</datasheet>
+      <fields>
+        <field name="Description">ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA</field>
+        <field name="Height">2.2</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">1SMA5930BT3G</field>
+        <field name="Mouser Part Number">863-1SMA5930BT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-1SMA5930BT3G</field>
+        <field name="RS Part Number">7925353</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7925353</field>
+      </fields>
+      <libsource lib="1SMA5930BT3G" part="1SMA5930BT3G" description="ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E521B</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E522F</tstamp>
+    </comp>
+    <comp ref="IC5">
+      <value>AO4421</value>
+      <footprint>SOIC127P600X175-8N</footprint>
+      <datasheet>http://www.aosmd.com/res/data_sheets/AO4421.pdf</datasheet>
+      <fields>
+        <field name="Description">MOSFET P-CH 60V 6.2A 8SOIC</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Alpha &amp; Omega Semiconductors</field>
+        <field name="Manufacturer_Part_Number">AO4421</field>
+      </fields>
+      <libsource lib="AO4421" part="AO4421" description="MOSFET P-CH 60V 6.2A 8SOIC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E524D</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>BC846BLT3G</value>
+      <footprint>SOT96P237X111-3N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF</datasheet>
+      <fields>
+        <field name="Height">1.11</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BC846BLT3G</field>
+        <field name="Mouser Part Number">863-BC846BLT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G</field>
+        <field name="RS Part Number">7737611P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7737611P</field>
+      </fields>
+      <libsource lib="BC846BLT3G" part="BC846BLT3G" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E525B</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>2.2k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E5271</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>330</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E527D</tstamp>
+    </comp>
+    <comp ref="Z4">
+      <value>1SMA5930BT3G</value>
+      <footprint>DIOM5226X220N</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF</datasheet>
+      <fields>
+        <field name="Description">ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA</field>
+        <field name="Height">2.2</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">1SMA5930BT3G</field>
+        <field name="Mouser Part Number">863-1SMA5930BT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-1SMA5930BT3G</field>
+        <field name="RS Part Number">7925353</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7925353</field>
+      </fields>
+      <libsource lib="1SMA5930BT3G" part="1SMA5930BT3G" description="ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E528D</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>1K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E52A5</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>MMBT3904-7-F</value>
+      <footprint>SOT-23</footprint>
+      <libsource lib="2020-03-04_01-47-19" part="MMBT3904-7-F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E52B6</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>MMBT3906-7-F</value>
+      <footprint>SOT-23</footprint>
+      <libsource lib="2020-03-04_01-49-45" part="MMBT3906-7-F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E52BC</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E52C3</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>400</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E52D3</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>320</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E52E2</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>1.2K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6E52F4</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>MBR1560STR</value>
+      <footprint>Package_TO_SOT_THT:TO-220-2_Vertical</footprint>
+      <datasheet>http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF</datasheet>
+      <libsource lib="Diode" part="MBR735" description="35V 7.5A Schottky Barrier Rectifier Diode, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E80610D</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>MBR1560STR</value>
+      <footprint>Package_TO_SOT_THT:TO-220-2_Vertical</footprint>
+      <datasheet>http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF</datasheet>
+      <libsource lib="Diode" part="MBR735" description="35V 7.5A Schottky Barrier Rectifier Diode, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E807E84</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>MBR1560STR</value>
+      <footprint>Package_TO_SOT_THT:TO-220-2_Vertical</footprint>
+      <datasheet>http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF</datasheet>
+      <libsource lib="Diode" part="MBR735" description="35V 7.5A Schottky Barrier Rectifier Diode, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E808840</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>MBR1560STR</value>
+      <footprint>Package_TO_SOT_THT:TO-220-2_Vertical</footprint>
+      <datasheet>http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF</datasheet>
+      <libsource lib="Diode" part="MBR735" description="35V 7.5A Schottky Barrier Rectifier Diode, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E809511</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>STD35P6LLF6</value>
+      <footprint>DPAK228P987X240-3N</footprint>
+      <datasheet>DPAK228P987X240-3N</datasheet>
+      <fields>
+        <field name="Field4">STMicroelectronics</field>
+      </fields>
+      <libsource lib="STD35P6LLF6" part="STD35P6LLF6" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E872083</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>100K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E89F739</tstamp>
+    </comp>
+    <comp ref="CR1">
+      <value>BZT52C11-7-F</value>
+      <footprint>SOD123</footprint>
+      <libsource lib="2020-03-04_04-53-16" part="BZT52C11-7-F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E8E598A</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E956890</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>10K</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E97C91C</tstamp>
+    </comp>
+    <comp ref="C_(optional_for_EMI_suppression)1">
+      <value>CAP</value>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E9A26CF</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x04_Male</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x04_Male" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA32A8A</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>470</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA84533</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>470</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EA9C68E</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>BD750L5FP-CE2</value>
+      <footprint>BD750L5FPCE2</footprint>
+      <datasheet>https://www.rohm.com/datasheet/BD750L5FP-C/bd7xxl5fp-c-e</datasheet>
+      <fields>
+        <field name="Description">Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase.</field>
+        <field name="Manufacturer_Name">ROHM Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BD750L5FP-CE2</field>
+        <field name="Mouser Part Number">755-BD750L5FP-CE2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=755-BD750L5FP-CE2</field>
+        <field name="RS Part Number">1246489P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1246489P</field>
+      </fields>
+      <libsource lib="BD750L5FP-CE2" part="BD750L5FP-CE2" description="Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB04DE0</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>C1206C105K5RACTU</value>
+      <footprint>CAP_C1206</footprint>
+      <libsource lib="2020-03-04_07-31-40" part="C1206C105K5RACTU" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB2E80C</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>C1206C475K5RACTU</value>
+      <footprint>C1206C</footprint>
+      <libsource lib="2020-03-04_07-36-52" part="C1206C475K5RACTU" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EB75677</tstamp>
+    </comp>
+    <comp ref="Zener_MMSZ5V1T1G_2">
+      <value>5.1V</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener_Small" description="Zener diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5EC7A154</tstamp>
+    </comp>
+    <comp ref="Zener_MMSZ5V1T1G_1">
+      <value>5.1V</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D_Zener_Small" description="Zener diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ECA02B0</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="1935161" part="1935161">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">1935161</field>
+        <field name="Footprint">PHOENIX_1935161</field>
+        <field name="Datasheet">Phoenix Contact</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="1SMA5930BT3G" part="1SMA5930BT3G">
+      <description>ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA</description>
+      <docs>http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF</docs>
+      <fields>
+        <field name="Reference">Z</field>
+        <field name="Value">1SMA5930BT3G</field>
+        <field name="Footprint">DIOM5226X220N</field>
+        <field name="Datasheet">http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF</field>
+        <field name="Description">ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA</field>
+        <field name="Height">2.2</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">1SMA5930BT3G</field>
+        <field name="Mouser Part Number">863-1SMA5930BT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-1SMA5930BT3G</field>
+        <field name="RS Part Number">7925353</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7925353</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="unspc"/>
+        <pin num="2" name="~" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="2020-03-04_01-47-19" part="MMBT3904-7-F">
+      <footprints>
+        <fp>SOT-23</fp>
+        <fp>SOT-23-M</fp>
+        <fp>SOT-23-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MMBT3904-7-F</field>
+        <field name="Footprint">SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="unspc"/>
+        <pin num="2" name="E" type="unspc"/>
+        <pin num="3" name="C" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="2020-03-04_01-49-45" part="MMBT3906-7-F">
+      <footprints>
+        <fp>SOT-23</fp>
+        <fp>SOT-23-M</fp>
+        <fp>SOT-23-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MMBT3906-7-F</field>
+        <field name="Footprint">SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="unspc"/>
+        <pin num="2" name="E" type="unspc"/>
+        <pin num="3" name="C" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="2020-03-04_04-53-16" part="BZT52C11-7-F">
+      <footprints>
+        <fp>SOD123</fp>
+        <fp>SOD123-M</fp>
+        <fp>SOD123-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">CR</field>
+        <field name="Value">BZT52C11-7-F</field>
+        <field name="Footprint">SOD123</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspc"/>
+        <pin num="2" name="2" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="2020-03-04_07-31-40" part="C1206C105K5RACTU">
+      <footprints>
+        <fp>CAP_C1206</fp>
+        <fp>CAP_C1206-M</fp>
+        <fp>CAP_C1206-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C1206C105K5RACTU</field>
+        <field name="Footprint">CAP_C1206</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspc"/>
+        <pin num="2" name="2" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="2020-03-04_07-36-52" part="C1206C475K5RACTU">
+      <footprints>
+        <fp>C1206C</fp>
+        <fp>C1206C-M</fp>
+        <fp>C1206C-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C1206C475K5RACTU</field>
+        <field name="Footprint">C1206C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspc"/>
+        <pin num="2" name="2" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="AO4421" part="AO4421">
+      <description>MOSFET P-CH 60V 6.2A 8SOIC</description>
+      <docs>http://www.aosmd.com/res/data_sheets/AO4421.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AO4421</field>
+        <field name="Footprint">SOIC127P600X175-8N</field>
+        <field name="Datasheet">http://www.aosmd.com/res/data_sheets/AO4421.pdf</field>
+        <field name="Description">MOSFET P-CH 60V 6.2A 8SOIC</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Alpha &amp; Omega Semiconductors</field>
+        <field name="Manufacturer_Part_Number">AO4421</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S_1" type="unspc"/>
+        <pin num="2" name="S_2" type="unspc"/>
+        <pin num="3" name="S_3" type="unspc"/>
+        <pin num="4" name="G" type="unspc"/>
+        <pin num="5" name="D_1" type="unspc"/>
+        <pin num="6" name="D_2" type="unspc"/>
+        <pin num="7" name="D_3" type="unspc"/>
+        <pin num="8" name="D_4" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="BC846BLT3G" part="BC846BLT3G">
+      <docs>http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC846BLT3G</field>
+        <field name="Footprint">SOT96P237X111-3N</field>
+        <field name="Datasheet">http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF</field>
+        <field name="Height">1.11</field>
+        <field name="Manufacturer_Name">ON Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BC846BLT3G</field>
+        <field name="Mouser Part Number">863-BC846BLT3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G</field>
+        <field name="RS Part Number">7737611P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7737611P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="unspc"/>
+        <pin num="2" name="E" type="unspc"/>
+        <pin num="3" name="C" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="BD750L5FP-CE2" part="BD750L5FP-CE2">
+      <description>Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase.</description>
+      <docs>https://www.rohm.com/datasheet/BD750L5FP-C/bd7xxl5fp-c-e</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">BD750L5FP-CE2</field>
+        <field name="Footprint">BD750L5FPCE2</field>
+        <field name="Datasheet">https://www.rohm.com/datasheet/BD750L5FP-C/bd7xxl5fp-c-e</field>
+        <field name="Description">Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase.</field>
+        <field name="Manufacturer_Name">ROHM Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BD750L5FP-CE2</field>
+        <field name="Mouser Part Number">755-BD750L5FP-CE2</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=755-BD750L5FP-CE2</field>
+        <field name="RS Part Number">1246489P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1246489P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="unspc"/>
+        <pin num="3" name="VOUT" type="unspc"/>
+        <pin num="4" name="GND" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Male">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener_Small">
+      <description>Zener diode, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="MBR735">
+      <aliases>
+        <alias>MBR745</alias>
+        <alias>CSD01060A</alias>
+        <alias>C3D02060A</alias>
+        <alias>C3D03060A</alias>
+        <alias>C3D04060A</alias>
+        <alias>C3D06060A</alias>
+        <alias>C3D08060A</alias>
+        <alias>C3D10060A</alias>
+        <alias>C3D04065A</alias>
+        <alias>C3D06065I</alias>
+        <alias>C3D06065A</alias>
+        <alias>C3D08065A</alias>
+        <alias>C3D08065I</alias>
+        <alias>C3D10065I</alias>
+        <alias>C3D10065A</alias>
+        <alias>C3D12065A</alias>
+        <alias>C3D16065A</alias>
+        <alias>CVFD20065A</alias>
+        <alias>C4D02120A</alias>
+        <alias>C4D05120A</alias>
+        <alias>C4D08120A</alias>
+        <alias>C4D10120A</alias>
+        <alias>C4D15120A</alias>
+        <alias>C4D20120A</alias>
+      </aliases>
+      <description>35V 7.5A Schottky Barrier Rectifier Diode, TO-220</description>
+      <docs>http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">MBR735</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-2_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SI7850DP-T1-GE3" part="SI7850DP-T1-GE3">
+      <description>VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL</description>
+      <docs>https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">SI7850DP-T1-GE3</field>
+        <field name="Footprint">SOIC127P615X112-9N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf</field>
+        <field name="Description">VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL</field>
+        <field name="Height">1.12</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7850DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7850DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S_1" type="unspc"/>
+        <pin num="2" name="S_2" type="unspc"/>
+        <pin num="3" name="S_3" type="unspc"/>
+        <pin num="4" name="G" type="unspc"/>
+        <pin num="5" name="D_1" type="unspc"/>
+        <pin num="6" name="D_2" type="unspc"/>
+        <pin num="7" name="D_3" type="unspc"/>
+        <pin num="8" name="D_4" type="unspc"/>
+        <pin num="9" name="EP" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="STD35P6LLF6" part="STD35P6LLF6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STD35P6LLF6</field>
+        <field name="Footprint">DPAK228P987X240-3N</field>
+        <field name="Datasheet">DPAK228P987X240-3N</field>
+        <field name="Field4">STMicroelectronics</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="BiDi"/>
+        <pin num="2" name="D(TAB)" type="BiDi"/>
+        <pin num="3" name="S" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="pspice" part="CAP">
+      <aliases>
+        <alias>C</alias>
+      </aliases>
+      <description>Capacitor symbol for simulation only</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CAP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="1935161">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/1935161/1935161.lib</uri>
+    </library>
+    <library logical="1SMA5930BT3G">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/LIB_1SMA5930BT3G/1SMA5930BT3G/KiCad/1SMA5930BT3G.lib</uri>
+    </library>
+    <library logical="2020-03-04_01-47-19">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/ul_MMBT39047F/KiCAD/2020-03-04_01-47-19/2020-03-04_01-47-19.lib</uri>
+    </library>
+    <library logical="2020-03-04_01-49-45">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/ul_MMBT39067F/KiCAD/2020-03-04_01-49-45/2020-03-04_01-49-45.lib</uri>
+    </library>
+    <library logical="2020-03-04_04-53-16">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/ul_BZT52C117F/KiCAD/2020-03-04_04-53-16/2020-03-04_04-53-16.lib</uri>
+    </library>
+    <library logical="2020-03-04_07-31-40">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/ul_C1206C105K5RACTU/KiCAD/2020-03-04_07-31-40/2020-03-04_07-31-40.lib</uri>
+    </library>
+    <library logical="2020-03-04_07-36-52">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/ul_C1206C475K5RACTU/KiCAD/2020-03-04_07-36-52/2020-03-04_07-36-52.lib</uri>
+    </library>
+    <library logical="AO4421">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/P MOSFET/LIB_AO4421/AO4421/KiCad/AO4421.lib</uri>
+    </library>
+    <library logical="BC846BLT3G">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/LIB_BC846BLT3G/BC846BLT3G/KiCad/BC846BLT3G.lib</uri>
+    </library>
+    <library logical="BD750L5FP-CE2">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/LIB_BD750L5FP-CE2/BD750L5FP-CE2/KiCad/BD750L5FP-CE2.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>D:\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>D:\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>D:\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="SI7850DP-T1-GE3">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/N MOSFET/LIB_SI7850DP-T1-GE3/SI7850DP-T1-GE3/KiCad/SI7850DP-T1-GE3.lib</uri>
+    </library>
+    <library logical="STD35P6LLF6">
+      <uri>C:\Users\Amogue\Documents\kiCAD\Motor_Driver_Rev-1/STD35P6LLF6/STD35P6LLF6.lib</uri>
+    </library>
+    <library logical="pspice">
+      <uri>D:\KiCad\share\kicad\library/pspice.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="Zener_MMSZ5V1T1G_1" pin="2"/>
+      <node ref="IC3" pin="4"/>
+      <node ref="Zener_MMSZ5V1T1G_2" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R17" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="R15" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R18" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="R10" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="J2" pin="2"/>
+      <node ref="D2" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="Q6" pin="1"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="2" name="Net-(R23-Pad2)">
+      <node ref="U5" pin="3"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="3" name="+36V">
+      <node ref="U1" pin="3"/>
+      <node ref="IC2" pin="3"/>
+      <node ref="R8" pin="1"/>
+      <node ref="CR1" pin="1"/>
+      <node ref="Z2" pin="1"/>
+      <node ref="IC2" pin="1"/>
+      <node ref="IC2" pin="2"/>
+      <node ref="U3" pin="3"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="R21" pin="1"/>
+      <node ref="IC1" pin="3"/>
+      <node ref="Z1" pin="1"/>
+      <node ref="U4" pin="3"/>
+      <node ref="IC3" pin="1"/>
+      <node ref="IC5" pin="3"/>
+      <node ref="IC5" pin="2"/>
+      <node ref="IC5" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="Z4" pin="1"/>
+    </net>
+    <net code="4" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1"/>
+      <node ref="R15" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="5" name="+BATT">
+      <node ref="J2" pin="1"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="6" name="Net-(IC5-Pad4)">
+      <node ref="R21" pin="2"/>
+      <node ref="IC5" pin="4"/>
+      <node ref="Q5" pin="3"/>
+      <node ref="Z4" pin="2"/>
+    </net>
+    <net code="7" name="Net-(Q5-Pad2)">
+      <node ref="Q5" pin="2"/>
+      <node ref="R19" pin="1"/>
+    </net>
+    <net code="8" name="Net-(R22-Pad2)">
+      <node ref="R22" pin="2"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="9" name="PWM_Input-1">
+      <node ref="R3" pin="2"/>
+      <node ref="Zener_MMSZ5V1T1G_1" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="10" name="PWM_Input-2">
+      <node ref="R1" pin="2"/>
+      <node ref="Zener_MMSZ5V1T1G_2" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="11" name="Net-(Q4-Pad1)">
+      <node ref="Q5" pin="1"/>
+      <node ref="Q4" pin="1"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="12" name="+5V">
+      <node ref="C1" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="IC3" pin="3"/>
+    </net>
+    <net code="13" name="Net-(Q3-Pad4)">
+      <node ref="R13" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="Q3" pin="4"/>
+    </net>
+    <net code="14" name="Net-(R17-Pad1)">
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="15" name="Net-(CR1-Pad2)">
+      <node ref="U3" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="CR1" pin="2"/>
+    </net>
+    <net code="16" name="Net-(Q6-Pad4)">
+      <node ref="R25" pin="2"/>
+      <node ref="R24" pin="2"/>
+      <node ref="Q6" pin="4"/>
+    </net>
+    <net code="17" name="Net-(R22-Pad1)">
+      <node ref="U5" pin="2"/>
+      <node ref="R24" pin="1"/>
+      <node ref="R22" pin="1"/>
+    </net>
+    <net code="18" name="Net-(Q2-Pad2)">
+      <node ref="R6" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="19" name="Net-(IC2-Pad4)">
+      <node ref="Z2" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="IC2" pin="4"/>
+    </net>
+    <net code="20" name="Net-(R1-Pad1)">
+      <node ref="R2" pin="2"/>
+      <node ref="U2" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="21" name="Net-(Q1-Pad2)">
+      <node ref="R5" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="22" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="23" name="Net-(IC1-Pad4)">
+      <node ref="IC1" pin="4"/>
+      <node ref="R7" pin="2"/>
+      <node ref="Z1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="24" name="Net-(IC4-Pad1)">
+      <node ref="IC4" pin="3"/>
+      <node ref="R20" pin="1"/>
+      <node ref="Z3" pin="1"/>
+      <node ref="IC4" pin="2"/>
+      <node ref="IC4" pin="1"/>
+    </net>
+    <net code="25" name="Net-(Q4-Pad2)">
+      <node ref="Q4" pin="2"/>
+      <node ref="R18" pin="1"/>
+    </net>
+    <net code="26" name="Motor_IN2">
+      <node ref="IC4" pin="8"/>
+      <node ref="IC5" pin="6"/>
+      <node ref="IC4" pin="6"/>
+      <node ref="IC5" pin="8"/>
+      <node ref="IC5" pin="5"/>
+      <node ref="IC4" pin="5"/>
+      <node ref="IC5" pin="7"/>
+      <node ref="IC4" pin="7"/>
+      <node ref="J1" pin="2"/>
+      <node ref="Q3" pin="8"/>
+      <node ref="Q3" pin="9"/>
+      <node ref="D4" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="Q3" pin="6"/>
+      <node ref="C_(optional_for_EMI_suppression)1" pin="1"/>
+      <node ref="Q3" pin="5"/>
+      <node ref="Q3" pin="7"/>
+    </net>
+    <net code="27" name="Net-(IC4-Pad4)">
+      <node ref="IC4" pin="4"/>
+      <node ref="Z3" pin="2"/>
+      <node ref="R20" pin="2"/>
+      <node ref="Q4" pin="3"/>
+    </net>
+    <net code="28" name="Motor_IN1">
+      <node ref="Q6" pin="7"/>
+      <node ref="D2" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="Q6" pin="9"/>
+      <node ref="Q6" pin="8"/>
+      <node ref="Q6" pin="6"/>
+      <node ref="Q6" pin="5"/>
+      <node ref="D1" pin="2"/>
+      <node ref="IC2" pin="5"/>
+      <node ref="IC2" pin="8"/>
+      <node ref="IC2" pin="7"/>
+      <node ref="IC2" pin="6"/>
+      <node ref="IC1" pin="8"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="IC1" pin="6"/>
+      <node ref="IC1" pin="5"/>
+      <node ref="C_(optional_for_EMI_suppression)1" pin="2"/>
+    </net>
+    <net code="29" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="30" name="Net-(R9-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="31" name="Net-(R11-Pad1)">
+      <node ref="R9" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U2" pin="2"/>
+    </net>
+  </nets>
+</export>

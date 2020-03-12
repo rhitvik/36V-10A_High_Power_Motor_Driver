@@ -1,0 +1,1695 @@
+EESchema Schematic File Version 4
+LIBS:Motor_Driver_Rev-1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SI7850DP-T1-GE3:SI7850DP-T1-GE3 Q3
+U 1 1 5E5DF3FD
+P 3500 -1700
+F 0 "Q3" H 4000 -1435 50  0000 C CNN
+F 1 "SI7850DP-T1-GE3" H 4000 -1526 50  0000 C CNN
+F 2 "SOIC127P615X112-9N" H 4350 -1600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf" H 4350 -1700 50  0001 L CNN
+F 4 "VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL" H 4350 -1800 50  0001 L CNN "Description"
+F 5 "1.12" H 4350 -1900 50  0001 L CNN "Height"
+F 6 "Vishay" H 4350 -2000 50  0001 L CNN "Manufacturer_Name"
+F 7 "SI7850DP-T1-GE3" H 4350 -2100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "781-SI7850DP-GE3" H 4350 -2200 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3" H 4350 -2300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 4350 -2400 50  0001 L CNN "RS Part Number"
+F 11 "" H 4350 -2500 50  0001 L CNN "RS Price/Stock"
+	1    3500 -1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L AO4421:AO4421 IC1
+U 1 1 5E5E0F58
+P 3000 -4900
+F 0 "IC1" H 3500 -4635 50  0000 C CNN
+F 1 "AO4421" H 3500 -4726 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 3850 -4800 50  0001 L CNN
+F 3 "http://www.aosmd.com/res/data_sheets/AO4421.pdf" H 3850 -4900 50  0001 L CNN
+F 4 "MOSFET P-CH 60V 6.2A 8SOIC" H 3850 -5000 50  0001 L CNN "Description"
+F 5 "1.75" H 3850 -5100 50  0001 L CNN "Height"
+F 6 "Alpha & Omega Semiconductors" H 3850 -5200 50  0001 L CNN "Manufacturer_Name"
+F 7 "AO4421" H 3850 -5300 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3850 -5400 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3850 -5500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3850 -5600 50  0001 L CNN "RS Part Number"
+F 11 "" H 3850 -5700 50  0001 L CNN "RS Price/Stock"
+	1    3000 -4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC846BLT3G:BC846BLT3G Q1
+U 1 1 5E5E2A23
+P 1000 -4600
+F 0 "Q1" H 1400 -4335 50  0000 C CNN
+F 1 "BC846BLT3G" H 1400 -4426 50  0000 C CNN
+F 2 "SOT96P237X111-3N" H 1650 -4500 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 1650 -4600 50  0001 L CNN
+F 4 "" H 1650 -4700 50  0001 L CNN "Description"
+F 5 "1.11" H 1650 -4800 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 1650 -4900 50  0001 L CNN "Manufacturer_Name"
+F 7 "BC846BLT3G" H 1650 -5000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "863-BC846BLT3G" H 1650 -5100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G" H 1650 -5200 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7737611P" H 1650 -5300 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7737611P" H 1650 -5400 50  0001 L CNN "RS Price/Stock"
+	1    1000 -4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 -4900 3000 -4800
+Wire Wire Line
+	3000 -4700 3000 -4800
+Connection ~ 3000 -4800
+Wire Wire Line
+	4000 -4900 4000 -4800
+Connection ~ 4000 -4800
+Wire Wire Line
+	4000 -4800 4000 -4700
+Connection ~ 4000 -4700
+Wire Wire Line
+	4000 -4700 4000 -4600
+$Comp
+L power:+36V #PWR07
+U 1 1 5E5EB4D2
+P 2450 -5450
+F 0 "#PWR07" H 2450 -5600 50  0001 C CNN
+F 1 "+36V" H 2465 -5277 50  0000 C CNN
+F 2 "" H 2450 -5450 50  0001 C CNN
+F 3 "" H 2450 -5450 50  0001 C CNN
+	1    2450 -5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 -4900
+Wire Wire Line
+	3000 -4900 3000 -5250
+$Comp
+L Device:R R7
+U 1 1 5E5EE2AE
+P 1900 -4900
+F 0 "R7" H 1970 -4854 50  0000 L CNN
+F 1 "2.2k" H 1970 -4945 50  0000 L CNN
+F 2 "" V 1830 -4900 50  0001 C CNN
+F 3 "~" H 1900 -4900 50  0001 C CNN
+	1    1900 -4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E5F007D
+P 800 -4050
+F 0 "#PWR03" H 800 -4300 50  0001 C CNN
+F 1 "GND" H 805 -4223 50  0000 C CNN
+F 2 "" H 800 -4050 50  0001 C CNN
+F 3 "" H 800 -4050 50  0001 C CNN
+	1    800  -4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E5F20A1
+P 800 -4250
+F 0 "R5" H 870 -4204 50  0000 L CNN
+F 1 "330" H 870 -4295 50  0000 L CNN
+F 2 "" V 730 -4250 50  0001 C CNN
+F 3 "~" H 800 -4250 50  0001 C CNN
+	1    800  -4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 -4600 2250 -4600
+Wire Wire Line
+	1900 -5050 1900 -5250
+Wire Wire Line
+	1900 -4750 1900 -4600
+Wire Wire Line
+	2250 -4650 2250 -4600
+Connection ~ 2250 -4600
+Wire Wire Line
+	2250 -4600 3000 -4600
+Wire Wire Line
+	3500 -1700 3500 -1600
+Connection ~ 3500 -1600
+Wire Wire Line
+	3500 -1600 3500 -1500
+Wire Wire Line
+	4500 -1700 4500 -1600
+Connection ~ 4500 -1600
+Wire Wire Line
+	4500 -1600 4500 -1500
+Connection ~ 4500 -1500
+Wire Wire Line
+	4500 -1500 4500 -1400
+$Comp
+L Device:R R13
+U 1 1 5E612868
+P 3400 -1150
+F 0 "R13" H 3330 -1196 50  0000 R CNN
+F 1 "10k" H 3330 -1105 50  0000 R CNN
+F 2 "" V 3330 -1150 50  0001 C CNN
+F 3 "~" H 3400 -1150 50  0001 C CNN
+	1    3400 -1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5E6144CB
+P 3400 -900
+F 0 "#PWR014" H 3400 -1150 50  0001 C CNN
+F 1 "GND" H 3405 -1073 50  0000 C CNN
+F 2 "" H 3400 -900 50  0001 C CNN
+F 3 "" H 3400 -900 50  0001 C CNN
+	1    3400 -900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 -1000 3400 -900
+Wire Wire Line
+	2450 -5450 2450 -5250
+Connection ~ 2450 -5250
+Wire Wire Line
+	2450 -5250 3000 -5250
+Wire Wire Line
+	1800 -4600 1900 -4600
+Connection ~ 1900 -4600
+Wire Wire Line
+	800  -4400 800  -4500
+Wire Wire Line
+	800  -4500 1000 -4500
+Wire Wire Line
+	800  -4050 800  -4100
+$Comp
+L AO4421:AO4421 IC2
+U 1 1 5E629B77
+P 3050 -3750
+F 0 "IC2" H 3550 -3485 50  0000 C CNN
+F 1 "AO4421" H 3550 -3576 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 3900 -3650 50  0001 L CNN
+F 3 "http://www.aosmd.com/res/data_sheets/AO4421.pdf" H 3900 -3750 50  0001 L CNN
+F 4 "MOSFET P-CH 60V 6.2A 8SOIC" H 3900 -3850 50  0001 L CNN "Description"
+F 5 "1.75" H 3900 -3950 50  0001 L CNN "Height"
+F 6 "Alpha & Omega Semiconductors" H 3900 -4050 50  0001 L CNN "Manufacturer_Name"
+F 7 "AO4421" H 3900 -4150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 3900 -4250 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 3900 -4350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 3900 -4450 50  0001 L CNN "RS Part Number"
+F 11 "" H 3900 -4550 50  0001 L CNN "RS Price/Stock"
+	1    3050 -3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC846BLT3G:BC846BLT3G Q2
+U 1 1 5E629B85
+P 1050 -3450
+F 0 "Q2" H 1450 -3185 50  0000 C CNN
+F 1 "BC846BLT3G" H 1450 -3276 50  0000 C CNN
+F 2 "SOT96P237X111-3N" H 1700 -3350 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 1700 -3450 50  0001 L CNN
+F 4 "" H 1700 -3550 50  0001 L CNN "Description"
+F 5 "1.11" H 1700 -3650 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 1700 -3750 50  0001 L CNN "Manufacturer_Name"
+F 7 "BC846BLT3G" H 1700 -3850 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "863-BC846BLT3G" H 1700 -3950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G" H 1700 -4050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7737611P" H 1700 -4150 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7737611P" H 1700 -4250 50  0001 L CNN "RS Price/Stock"
+	1    1050 -3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 -3750 3050 -3650
+Wire Wire Line
+	3050 -3550 3050 -3650
+Connection ~ 3050 -3650
+Wire Wire Line
+	4050 -3750 4050 -3650
+Connection ~ 4050 -3650
+Wire Wire Line
+	4050 -3650 4050 -3550
+Connection ~ 4050 -3550
+Wire Wire Line
+	4050 -3550 4050 -3450
+$Comp
+L power:+36V #PWR010
+U 1 1 5E629B93
+P 2500 -4300
+F 0 "#PWR010" H 2500 -4450 50  0001 C CNN
+F 1 "+36V" H 2515 -4127 50  0000 C CNN
+F 2 "" H 2500 -4300 50  0001 C CNN
+F 3 "" H 2500 -4300 50  0001 C CNN
+	1    2500 -4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 -3750
+Wire Wire Line
+	3050 -3750 3050 -4100
+$Comp
+L Device:R R8
+U 1 1 5E629B9B
+P 1950 -3750
+F 0 "R8" H 2020 -3704 50  0000 L CNN
+F 1 "2.2k" H 2020 -3795 50  0000 L CNN
+F 2 "" V 1880 -3750 50  0001 C CNN
+F 3 "~" H 1950 -3750 50  0001 C CNN
+	1    1950 -3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E629BA1
+P 850 -2900
+F 0 "#PWR05" H 850 -3150 50  0001 C CNN
+F 1 "GND" H 855 -3073 50  0000 C CNN
+F 2 "" H 850 -2900 50  0001 C CNN
+F 3 "" H 850 -2900 50  0001 C CNN
+	1    850  -2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E629BA7
+P 850 -3100
+F 0 "R6" H 920 -3054 50  0000 L CNN
+F 1 "330" H 920 -3145 50  0000 L CNN
+F 2 "" V 780 -3100 50  0001 C CNN
+F 3 "~" H 850 -3100 50  0001 C CNN
+	1    850  -3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 -3450 2300 -3450
+Wire Wire Line
+	1950 -3900 1950 -4100
+Wire Wire Line
+	1950 -3600 1950 -3450
+Wire Wire Line
+	2300 -3500 2300 -3450
+Connection ~ 2300 -3450
+Wire Wire Line
+	2300 -3450 3050 -3450
+Wire Wire Line
+	2500 -4300 2500 -4100
+Connection ~ 2500 -4100
+Wire Wire Line
+	2500 -4100 3050 -4100
+Wire Wire Line
+	1850 -3450 1950 -3450
+Connection ~ 1950 -3450
+Wire Wire Line
+	850  -3250 850  -3350
+Wire Wire Line
+	850  -3350 1050 -3350
+Wire Wire Line
+	850  -2900 850  -2950
+Wire Wire Line
+	1000 -4600 500  -4600
+Wire Wire Line
+	500  -4600 500  -4050
+Wire Wire Line
+	500  -3450 1050 -3450
+$Comp
+L Device:R R3
+U 1 1 5E62C304
+P 150 -4050
+F 0 "R3" V -57 -4050 50  0000 C CNN
+F 1 "1K" V 34  -4050 50  0000 C CNN
+F 2 "" V 80  -4050 50  0001 C CNN
+F 3 "~" H 150 -4050 50  0001 C CNN
+	1    150  -4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	300  -4050 350  -4050
+Connection ~ 500  -4050
+Wire Wire Line
+	500  -4050 500  -3450
+Text GLabel -250 -4050 0    50   Input ~ 0
+PWM_Input-1
+Wire Wire Line
+	-250 -4050 0    -4050
+Wire Wire Line
+	4000 -4800 4350 -4800
+Wire Wire Line
+	4350 -4800 4350 -4250
+Wire Wire Line
+	4350 -3650 4050 -3650
+Wire Wire Line
+	4000 -900 4500 -900
+Wire Wire Line
+	4500 -900 4500 -1150
+Connection ~ 4500 -1400
+$Comp
+L 2020-03-04_01-47-19:MMBT3904-7-F U1
+U 1 1 5E5F2832
+P 400 -1950
+F 0 "U1" H 1300 -1563 60  0000 C CNN
+F 1 "MMBT3904-7-F" H 1300 -1669 60  0000 C CNN
+F 2 "SOT-23" H 1300 -1710 60  0001 C CNN
+F 3 "" H 400 -1950 60  0000 C CNN
+	1    400  -1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2020-03-04_01-49-45:MMBT3906-7-F U2
+U 1 1 5E5F3CAE
+P 400 -950
+F 0 "U2" H 1300 -1437 60  0000 C CNN
+F 1 "MMBT3906-7-F" H 1300 -1331 60  0000 C CNN
+F 2 "SOT-23" H 1300 -710 60  0001 C CNN
+F 3 "" H 400 -950 60  0000 C CNN
+	1    400  -950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	400  -1950 400  -1500
+$Comp
+L Device:R R2
+U 1 1 5E5F8240
+P 0 -1100
+F 0 "R2" H 70  -1054 50  0000 L CNN
+F 1 "10K" H 70  -1145 50  0000 L CNN
+F 2 "" V -70 -1100 50  0001 C CNN
+F 3 "~" H 0   -1100 50  0001 C CNN
+	1    0    -1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-100 -1500 0    -1500
+Connection ~ 400  -1500
+Wire Wire Line
+	400  -1500 400  -950
+Wire Wire Line
+	0    -1250 0    -1500
+Connection ~ 0    -1500
+Wire Wire Line
+	0    -1500 400  -1500
+Text GLabel -600 -1500 0    50   Input ~ 0
+PWM_Input-2
+Wire Wire Line
+	-600 -1500 -400 -1500
+Wire Wire Line
+	2200 -1850 2450 -1850
+Wire Wire Line
+	2200 -1050 2450 -1050
+$Comp
+L Device:R R9
+U 1 1 5E60B131
+P 2450 -1600
+F 0 "R9" H 2380 -1646 50  0000 R CNN
+F 1 "400" H 2380 -1555 50  0000 R CNN
+F 2 "" V 2380 -1600 50  0001 C CNN
+F 3 "~" H 2450 -1600 50  0001 C CNN
+	1    2450 -1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5E60B4B2
+P 2450 -450
+F 0 "#PWR09" H 2450 -700 50  0001 C CNN
+F 1 "GND" H 2455 -623 50  0000 C CNN
+F 2 "" H 2450 -450 50  0001 C CNN
+F 3 "" H 2450 -450 50  0001 C CNN
+	1    2450 -450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 -450 2450 -550
+Wire Wire Line
+	2450 -850 2450 -950
+Wire Wire Line
+	2450 -950 2200 -950
+$Comp
+L Device:R R10
+U 1 1 5E60EC96
+P 2450 -700
+F 0 "R10" H 2380 -746 50  0000 R CNN
+F 1 "320" H 2380 -655 50  0000 R CNN
+F 2 "" V 2380 -700 50  0001 C CNN
+F 3 "~" H 2450 -700 50  0001 C CNN
+	1    2450 -700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 -1750 2450 -1850
+$Comp
+L power:+36V #PWR08
+U 1 1 5E613C97
+P 2450 -2150
+F 0 "#PWR08" H 2450 -2300 50  0001 C CNN
+F 1 "+36V" H 2465 -1977 50  0000 C CNN
+F 2 "" H 2450 -2150 50  0001 C CNN
+F 3 "" H 2450 -2150 50  0001 C CNN
+	1    2450 -2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 -2150 2450 -1950
+Wire Wire Line
+	2200 -1950 2450 -1950
+$Comp
+L Device:R R1
+U 1 1 5E5F7683
+P -250 -1500
+F 0 "R1" H -180 -1454 50  0000 L CNN
+F 1 "1.2K" H -180 -1545 50  0000 L CNN
+F 2 "" V -320 -1500 50  0001 C CNN
+F 3 "~" H -250 -1500 50  0001 C CNN
+	1    -250 -1500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5E61C7A4
+P 3250 -800
+F 0 "#PWR013" H 3250 -1050 50  0001 C CNN
+F 1 "GND" H 3255 -973 50  0000 C CNN
+F 2 "" H 3250 -800 50  0001 C CNN
+F 3 "" H 3250 -800 50  0001 C CNN
+	1    3250 -800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 -800 3250 -1600
+Wire Wire Line
+	3250 -1600 3500 -1600
+$Comp
+L 1935161:1935161 J2
+U 1 1 5E62A1F5
+P 2150 1700
+F 0 "J2" H 2280 1746 50  0000 L CNN
+F 1 "1935161" H 2280 1655 50  0000 L CNN
+F 2 "PHOENIX_1935161" H 2150 1700 50  0001 L BNN
+F 3 "Phoenix Contact" H 2150 1700 50  0001 L BNN
+	1    2150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E62C709
+P 1800 1950
+F 0 "#PWR06" H 1800 1700 50  0001 C CNN
+F 1 "GND" H 1805 1777 50  0000 C CNN
+F 2 "" H 1800 1950 50  0001 C CNN
+F 3 "" H 1800 1950 50  0001 C CNN
+	1    1800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1950 1800 1800
+Wire Wire Line
+	1800 1800 1850 1800
+$Comp
+L 1935161:1935161 J1
+U 1 1 5E63858D
+P 1350 2400
+F 0 "J1" V 1289 2170 50  0000 R CNN
+F 1 "1935161" V 1198 2170 50  0000 R CNN
+F 2 "PHOENIX_1935161" H 1350 2400 50  0001 L BNN
+F 3 "Phoenix Contact" H 1350 2400 50  0001 L BNN
+	1    1350 2400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 700  3350 3    50   Input ~ 0
+Motor_IN1
+Text GLabel 2000 3350 3    50   Input ~ 0
+Motor_IN2
+Text GLabel 4950 -1150 2    50   Input ~ 0
+Motor_IN2
+Text GLabel 4550 -4250 2    50   Input ~ 0
+Motor_IN1
+Wire Wire Line
+	4550 -4250 4350 -4250
+Connection ~ 4350 -4250
+Wire Wire Line
+	4350 -4250 4350 -3650
+Wire Wire Line
+	4950 -1150 4500 -1150
+Connection ~ 4500 -1150
+Wire Wire Line
+	4500 -1150 4500 -1400
+$Comp
+L SI7850DP-T1-GE3:SI7850DP-T1-GE3 Q6
+U 1 1 5E6E51CD
+P 10100 -1900
+F 0 "Q6" H 10600 -1635 50  0000 C CNN
+F 1 "SI7850DP-T1-GE3" H 10600 -1726 50  0000 C CNN
+F 2 "SOIC127P615X112-9N" H 10950 -1800 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf" H 10950 -1900 50  0001 L CNN
+F 4 "VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL" H 10950 -2000 50  0001 L CNN "Description"
+F 5 "1.12" H 10950 -2100 50  0001 L CNN "Height"
+F 6 "Vishay" H 10950 -2200 50  0001 L CNN "Manufacturer_Name"
+F 7 "SI7850DP-T1-GE3" H 10950 -2300 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "781-SI7850DP-GE3" H 10950 -2400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3" H 10950 -2500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10950 -2600 50  0001 L CNN "RS Part Number"
+F 11 "" H 10950 -2700 50  0001 L CNN "RS Price/Stock"
+	1    10100 -1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L AO4421:AO4421 IC4
+U 1 1 5E6E51DB
+P 9600 -5100
+F 0 "IC4" H 10100 -4835 50  0000 C CNN
+F 1 "AO4421" H 10100 -4926 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 10450 -5000 50  0001 L CNN
+F 3 "http://www.aosmd.com/res/data_sheets/AO4421.pdf" H 10450 -5100 50  0001 L CNN
+F 4 "MOSFET P-CH 60V 6.2A 8SOIC" H 10450 -5200 50  0001 L CNN "Description"
+F 5 "1.75" H 10450 -5300 50  0001 L CNN "Height"
+F 6 "Alpha & Omega Semiconductors" H 10450 -5400 50  0001 L CNN "Manufacturer_Name"
+F 7 "AO4421" H 10450 -5500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 10450 -5600 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 10450 -5700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10450 -5800 50  0001 L CNN "RS Part Number"
+F 11 "" H 10450 -5900 50  0001 L CNN "RS Price/Stock"
+	1    9600 -5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC846BLT3G:BC846BLT3G Q4
+U 1 1 5E6E51E9
+P 7600 -4800
+F 0 "Q4" H 8000 -4535 50  0000 C CNN
+F 1 "BC846BLT3G" H 8000 -4626 50  0000 C CNN
+F 2 "SOT96P237X111-3N" H 8250 -4700 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 8250 -4800 50  0001 L CNN
+F 4 "" H 8250 -4900 50  0001 L CNN "Description"
+F 5 "1.11" H 8250 -5000 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 8250 -5100 50  0001 L CNN "Manufacturer_Name"
+F 7 "BC846BLT3G" H 8250 -5200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "863-BC846BLT3G" H 8250 -5300 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G" H 8250 -5400 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7737611P" H 8250 -5500 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7737611P" H 8250 -5600 50  0001 L CNN "RS Price/Stock"
+	1    7600 -4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 -5100 9600 -5000
+Wire Wire Line
+	9600 -4900 9600 -5000
+Connection ~ 9600 -5000
+Wire Wire Line
+	10600 -5100 10600 -5000
+Connection ~ 10600 -5000
+Wire Wire Line
+	10600 -5000 10600 -4900
+Connection ~ 10600 -4900
+Wire Wire Line
+	10600 -4900 10600 -4800
+$Comp
+L power:+36V #PWR035
+U 1 1 5E6E51F7
+P 9050 -5650
+F 0 "#PWR035" H 9050 -5800 50  0001 C CNN
+F 1 "+36V" H 9065 -5477 50  0000 C CNN
+F 2 "" H 9050 -5650 50  0001 C CNN
+F 3 "" H 9050 -5650 50  0001 C CNN
+	1    9050 -5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 9600 -5100
+Wire Wire Line
+	9600 -5100 9600 -5450
+$Comp
+L Device:R R20
+U 1 1 5E6E51FF
+P 8500 -5100
+F 0 "R20" H 8570 -5054 50  0000 L CNN
+F 1 "2.2k" H 8570 -5145 50  0000 L CNN
+F 2 "" V 8430 -5100 50  0001 C CNN
+F 3 "~" H 8500 -5100 50  0001 C CNN
+	1    8500 -5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5E6E5205
+P 7400 -4250
+F 0 "#PWR025" H 7400 -4500 50  0001 C CNN
+F 1 "GND" H 7405 -4423 50  0000 C CNN
+F 2 "" H 7400 -4250 50  0001 C CNN
+F 3 "" H 7400 -4250 50  0001 C CNN
+	1    7400 -4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5E6E520B
+P 7400 -4450
+F 0 "R18" H 7470 -4404 50  0000 L CNN
+F 1 "330" H 7470 -4495 50  0000 L CNN
+F 2 "" V 7330 -4450 50  0001 C CNN
+F 3 "~" H 7400 -4450 50  0001 C CNN
+	1    7400 -4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 -4800 8850 -4800
+Wire Wire Line
+	8500 -5250 8500 -5450
+Wire Wire Line
+	8500 -4950 8500 -4800
+Wire Wire Line
+	8850 -4850 8850 -4800
+Connection ~ 8850 -4800
+Wire Wire Line
+	8850 -4800 9600 -4800
+Wire Wire Line
+	10100 -1900 10100 -1800
+Connection ~ 10100 -1800
+Wire Wire Line
+	10100 -1800 10100 -1700
+Wire Wire Line
+	11100 -1900 11100 -1800
+Connection ~ 11100 -1800
+Wire Wire Line
+	11100 -1800 11100 -1700
+Connection ~ 11100 -1700
+Wire Wire Line
+	11100 -1700 11100 -1600
+$Comp
+L Device:R R25
+U 1 1 5E6E522F
+P 10000 -1400
+F 0 "R25" H 9930 -1446 50  0000 R CNN
+F 1 "10k" H 9930 -1355 50  0000 R CNN
+F 2 "" V 9930 -1400 50  0001 C CNN
+F 3 "~" H 10000 -1400 50  0001 C CNN
+	1    10000 -1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5E6E5235
+P 10000 -1150
+F 0 "#PWR034" H 10000 -1400 50  0001 C CNN
+F 1 "GND" H 10005 -1323 50  0000 C CNN
+F 2 "" H 10000 -1150 50  0001 C CNN
+F 3 "" H 10000 -1150 50  0001 C CNN
+	1    10000 -1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 -1250 10000 -1150
+Wire Wire Line
+	9050 -5650 9050 -5450
+Connection ~ 9050 -5450
+Wire Wire Line
+	9050 -5450 9600 -5450
+Wire Wire Line
+	8400 -4800 8500 -4800
+Connection ~ 8500 -4800
+Wire Wire Line
+	7400 -4600 7400 -4700
+Wire Wire Line
+	7400 -4700 7600 -4700
+Wire Wire Line
+	7400 -4250 7400 -4300
+$Comp
+L AO4421:AO4421 IC5
+U 1 1 5E6E524D
+P 9650 -3950
+F 0 "IC5" H 10150 -3685 50  0000 C CNN
+F 1 "AO4421" H 10150 -3776 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 10500 -3850 50  0001 L CNN
+F 3 "http://www.aosmd.com/res/data_sheets/AO4421.pdf" H 10500 -3950 50  0001 L CNN
+F 4 "MOSFET P-CH 60V 6.2A 8SOIC" H 10500 -4050 50  0001 L CNN "Description"
+F 5 "1.75" H 10500 -4150 50  0001 L CNN "Height"
+F 6 "Alpha & Omega Semiconductors" H 10500 -4250 50  0001 L CNN "Manufacturer_Name"
+F 7 "AO4421" H 10500 -4350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 10500 -4450 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 10500 -4550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10500 -4650 50  0001 L CNN "RS Part Number"
+F 11 "" H 10500 -4750 50  0001 L CNN "RS Price/Stock"
+	1    9650 -3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC846BLT3G:BC846BLT3G Q5
+U 1 1 5E6E525B
+P 7650 -3650
+F 0 "Q5" H 8050 -3385 50  0000 C CNN
+F 1 "BC846BLT3G" H 8050 -3476 50  0000 C CNN
+F 2 "SOT96P237X111-3N" H 8300 -3550 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" H 8300 -3650 50  0001 L CNN
+F 4 "" H 8300 -3750 50  0001 L CNN "Description"
+F 5 "1.11" H 8300 -3850 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 8300 -3950 50  0001 L CNN "Manufacturer_Name"
+F 7 "BC846BLT3G" H 8300 -4050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "863-BC846BLT3G" H 8300 -4150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G" H 8300 -4250 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7737611P" H 8300 -4350 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7737611P" H 8300 -4450 50  0001 L CNN "RS Price/Stock"
+	1    7650 -3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 -3950 9650 -3850
+Wire Wire Line
+	9650 -3750 9650 -3850
+Connection ~ 9650 -3850
+Wire Wire Line
+	10650 -3950 10650 -3850
+Connection ~ 10650 -3850
+Wire Wire Line
+	10650 -3850 10650 -3750
+Connection ~ 10650 -3750
+Wire Wire Line
+	10650 -3750 10650 -3650
+$Comp
+L power:+36V #PWR032
+U 1 1 5E6E5269
+P 9100 -4500
+F 0 "#PWR032" H 9100 -4650 50  0001 C CNN
+F 1 "+36V" H 9115 -4327 50  0000 C CNN
+F 2 "" H 9100 -4500 50  0001 C CNN
+F 3 "" H 9100 -4500 50  0001 C CNN
+	1    9100 -4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 9650 -3950
+Wire Wire Line
+	9650 -3950 9650 -4300
+$Comp
+L Device:R R21
+U 1 1 5E6E5271
+P 8550 -3950
+F 0 "R21" H 8620 -3904 50  0000 L CNN
+F 1 "2.2k" H 8620 -3995 50  0000 L CNN
+F 2 "" V 8480 -3950 50  0001 C CNN
+F 3 "~" H 8550 -3950 50  0001 C CNN
+	1    8550 -3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5E6E5277
+P 7450 -3100
+F 0 "#PWR027" H 7450 -3350 50  0001 C CNN
+F 1 "GND" H 7455 -3273 50  0000 C CNN
+F 2 "" H 7450 -3100 50  0001 C CNN
+F 3 "" H 7450 -3100 50  0001 C CNN
+	1    7450 -3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5E6E527D
+P 7450 -3300
+F 0 "R19" H 7520 -3254 50  0000 L CNN
+F 1 "330" H 7520 -3345 50  0000 L CNN
+F 2 "" V 7380 -3300 50  0001 C CNN
+F 3 "~" H 7450 -3300 50  0001 C CNN
+	1    7450 -3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 -3650 8900 -3650
+Wire Wire Line
+	8550 -4100 8550 -4300
+Wire Wire Line
+	8550 -3800 8550 -3650
+Wire Wire Line
+	8900 -3700 8900 -3650
+Connection ~ 8900 -3650
+Wire Wire Line
+	8900 -3650 9650 -3650
+Wire Wire Line
+	9100 -4500 9100 -4300
+Connection ~ 9100 -4300
+Wire Wire Line
+	9100 -4300 9650 -4300
+Wire Wire Line
+	8450 -3650 8550 -3650
+Connection ~ 8550 -3650
+Wire Wire Line
+	7450 -3450 7450 -3550
+Wire Wire Line
+	7450 -3550 7650 -3550
+Wire Wire Line
+	7450 -3100 7450 -3150
+Wire Wire Line
+	7600 -4800 7100 -4800
+Wire Wire Line
+	7100 -4800 7100 -4250
+Wire Wire Line
+	7100 -3650 7650 -3650
+$Comp
+L Device:R R16
+U 1 1 5E6E52A5
+P 6750 -4250
+F 0 "R16" V 6543 -4250 50  0000 C CNN
+F 1 "1K" V 6634 -4250 50  0000 C CNN
+F 2 "" V 6680 -4250 50  0001 C CNN
+F 3 "~" H 6750 -4250 50  0001 C CNN
+	1    6750 -4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 -4250 7100 -4250
+Connection ~ 7100 -4250
+Wire Wire Line
+	7100 -4250 7100 -3650
+Text GLabel 6350 -4250 0    50   Input ~ 0
+PWM_Input-2
+Wire Wire Line
+	6350 -4250 6600 -4250
+Wire Wire Line
+	10600 -5000 10950 -5000
+Wire Wire Line
+	10950 -5000 10950 -4450
+Wire Wire Line
+	10950 -3850 10650 -3850
+Wire Wire Line
+	10600 -1100 11100 -1100
+Wire Wire Line
+	11100 -1100 11100 -1350
+Connection ~ 11100 -1600
+$Comp
+L 2020-03-04_01-47-19:MMBT3904-7-F U4
+U 1 1 5E6E52B6
+P 7000 -2150
+F 0 "U4" H 7900 -1763 60  0000 C CNN
+F 1 "MMBT3904-7-F" H 7900 -1869 60  0000 C CNN
+F 2 "SOT-23" H 7900 -1910 60  0001 C CNN
+F 3 "" H 7000 -2150 60  0000 C CNN
+	1    7000 -2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2020-03-04_01-49-45:MMBT3906-7-F U5
+U 1 1 5E6E52BC
+P 7000 -1150
+F 0 "U5" H 7900 -1637 60  0000 C CNN
+F 1 "MMBT3906-7-F" H 7900 -1531 60  0000 C CNN
+F 2 "SOT-23" H 7900 -910 60  0001 C CNN
+F 3 "" H 7000 -1150 60  0000 C CNN
+	1    7000 -1150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7000 -2150 7000 -1700
+$Comp
+L Device:R R15
+U 1 1 5E6E52C3
+P 6600 -1300
+F 0 "R15" H 6670 -1254 50  0000 L CNN
+F 1 "10K" H 6670 -1345 50  0000 L CNN
+F 2 "" V 6530 -1300 50  0001 C CNN
+F 3 "~" H 6600 -1300 50  0001 C CNN
+	1    6600 -1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 -1700 6600 -1700
+Connection ~ 7000 -1700
+Wire Wire Line
+	7000 -1700 7000 -1150
+Wire Wire Line
+	6600 -1450 6600 -1700
+Connection ~ 6600 -1700
+Wire Wire Line
+	6600 -1700 7000 -1700
+Text GLabel 6000 -1700 0    50   Input ~ 0
+PWM_Input-1
+Wire Wire Line
+	6000 -1700 6200 -1700
+Wire Wire Line
+	8800 -2050 9050 -2050
+Wire Wire Line
+	8800 -1250 9050 -1250
+$Comp
+L Device:R R22
+U 1 1 5E6E52D3
+P 9050 -1800
+F 0 "R22" H 8980 -1846 50  0000 R CNN
+F 1 "400" H 8980 -1755 50  0000 R CNN
+F 2 "" V 8980 -1800 50  0001 C CNN
+F 3 "~" H 9050 -1800 50  0001 C CNN
+	1    9050 -1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5E6E52D9
+P 9050 -650
+F 0 "#PWR031" H 9050 -900 50  0001 C CNN
+F 1 "GND" H 9055 -823 50  0000 C CNN
+F 2 "" H 9050 -650 50  0001 C CNN
+F 3 "" H 9050 -650 50  0001 C CNN
+	1    9050 -650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 -650 9050 -750
+Wire Wire Line
+	9050 -1050 9050 -1150
+Wire Wire Line
+	9050 -1150 8800 -1150
+$Comp
+L Device:R R23
+U 1 1 5E6E52E2
+P 9050 -900
+F 0 "R23" H 8980 -946 50  0000 R CNN
+F 1 "320" H 8980 -855 50  0000 R CNN
+F 2 "" V 8980 -900 50  0001 C CNN
+F 3 "~" H 9050 -900 50  0001 C CNN
+	1    9050 -900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 -1950 9050 -2050
+$Comp
+L power:+36V #PWR030
+U 1 1 5E6E52EC
+P 9050 -2350
+F 0 "#PWR030" H 9050 -2500 50  0001 C CNN
+F 1 "+36V" H 9065 -2177 50  0000 C CNN
+F 2 "" H 9050 -2350 50  0001 C CNN
+F 3 "" H 9050 -2350 50  0001 C CNN
+	1    9050 -2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 -2350 9050 -2150
+Wire Wire Line
+	8800 -2150 9050 -2150
+$Comp
+L Device:R R14
+U 1 1 5E6E52F4
+P 6350 -1700
+F 0 "R14" H 6420 -1654 50  0000 L CNN
+F 1 "1.2K" H 6420 -1745 50  0000 L CNN
+F 2 "" V 6280 -1700 50  0001 C CNN
+F 3 "~" H 6350 -1700 50  0001 C CNN
+	1    6350 -1700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 5E6E52FA
+P 9850 -1000
+F 0 "#PWR033" H 9850 -1250 50  0001 C CNN
+F 1 "GND" H 9855 -1173 50  0000 C CNN
+F 2 "" H 9850 -1000 50  0001 C CNN
+F 3 "" H 9850 -1000 50  0001 C CNN
+	1    9850 -1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 -1000 9850 -1800
+Wire Wire Line
+	9850 -1800 10100 -1800
+Text GLabel 11150 -4450 2    50   Input ~ 0
+Motor_IN2
+Text GLabel 11550 -1350 2    50   Input ~ 0
+Motor_IN1
+Wire Wire Line
+	11150 -4450 10950 -4450
+Connection ~ 10950 -4450
+Wire Wire Line
+	10950 -4450 10950 -3850
+Wire Wire Line
+	11550 -1350 11100 -1350
+Connection ~ 11100 -1350
+Wire Wire Line
+	11100 -1350 11100 -1600
+Text GLabel 4900 -2950 0    50   Input ~ 0
+Motor_IN1
+Text GLabel 5950 -2950 2    50   Input ~ 0
+Motor_IN2
+$Comp
+L Diode:MBR735 D1
+U 1 1 5E80610D
+P 5050 -3300
+F 0 "D1" V 5004 -3221 50  0000 L CNN
+F 1 "MBR1560STR" V 5095 -3221 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" H 5050 -3475 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF" H 5050 -3300 50  0001 C CNN
+	1    5050 -3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:MBR735 D3
+U 1 1 5E807E84
+P 5800 -3300
+F 0 "D3" V 5754 -3221 50  0000 L CNN
+F 1 "MBR1560STR" V 5845 -3221 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" H 5800 -3475 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF" H 5800 -3300 50  0001 C CNN
+	1    5800 -3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:MBR735 D2
+U 1 1 5E808840
+P 5050 -2650
+F 0 "D2" V 5004 -2571 50  0000 L CNN
+F 1 "MBR1560STR" V 5095 -2571 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" H 5050 -2825 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF" H 5050 -2650 50  0001 C CNN
+	1    5050 -2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:MBR735 D4
+U 1 1 5E809511
+P 5800 -2650
+F 0 "D4" V 5754 -2571 50  0000 L CNN
+F 1 "MBR1560STR" V 5845 -2571 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" H 5800 -2825 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/MBR735-D.PDF" H 5800 -2650 50  0001 C CNN
+	1    5800 -2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 -2800 5050 -2950
+Wire Wire Line
+	4900 -2950 5050 -2950
+Connection ~ 5050 -2950
+Wire Wire Line
+	5050 -2950 5050 -3150
+Wire Wire Line
+	5800 -2800 5800 -2950
+Wire Wire Line
+	5950 -2950 5800 -2950
+Connection ~ 5800 -2950
+Wire Wire Line
+	5800 -2950 5800 -3150
+Wire Wire Line
+	5050 -3450 5400 -3450
+Wire Wire Line
+	5050 -2500 5450 -2500
+$Comp
+L power:+36V #PWR015
+U 1 1 5E83B684
+P 5400 -3600
+F 0 "#PWR015" H 5400 -3750 50  0001 C CNN
+F 1 "+36V" H 5415 -3427 50  0000 C CNN
+F 2 "" H 5400 -3600 50  0001 C CNN
+F 3 "" H 5400 -3600 50  0001 C CNN
+	1    5400 -3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5E83BE24
+P 5450 -2350
+F 0 "#PWR016" H 5450 -2600 50  0001 C CNN
+F 1 "GND" H 5455 -2523 50  0000 C CNN
+F 2 "" H 5450 -2350 50  0001 C CNN
+F 3 "" H 5450 -2350 50  0001 C CNN
+	1    5450 -2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 -3600 5400 -3450
+Connection ~ 5400 -3450
+Wire Wire Line
+	5400 -3450 5800 -3450
+Wire Wire Line
+	5450 -2350 5450 -2500
+Connection ~ 5450 -2500
+Wire Wire Line
+	5450 -2500 5800 -2500
+$Comp
+L STD35P6LLF6:STD35P6LLF6 U3
+U 1 1 5E872083
+P 3750 1550
+F 0 "U3" H 4282 1596 50  0000 L CNN
+F 1 "STD35P6LLF6" H 4282 1505 50  0000 L CNN
+F 2 "DPAK228P987X240-3N" H 3750 1550 50  0001 L BNN
+F 3 "DPAK228P987X240-3N" H 3750 1550 50  0001 L BNN
+F 4 "STMicroelectronics" H 3750 1550 50  0001 L BNN "Field4"
+	1    3750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR04
+U 1 1 5E873B8B
+P 800 850
+F 0 "#PWR04" H 800 700 50  0001 C CNN
+F 1 "+BATT" H 815 1023 50  0000 C CNN
+F 2 "" H 800 850 50  0001 C CNN
+F 3 "" H 800 850 50  0001 C CNN
+	1    800  850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  850  800  1600
+Wire Wire Line
+	800  1600 1750 1600
+Wire Wire Line
+	1750 1350 1750 1600
+Connection ~ 1750 1600
+Wire Wire Line
+	1750 1600 1850 1600
+$Comp
+L Device:R R12
+U 1 1 5E89F739
+P 2950 2650
+F 0 "R12" H 2880 2604 50  0000 R CNN
+F 1 "100K" H 2880 2695 50  0000 R CNN
+F 2 "" V 2880 2650 50  0001 C CNN
+F 3 "~" H 2950 2650 50  0001 C CNN
+	1    2950 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5E8A8EEA
+P 2950 2950
+F 0 "#PWR012" H 2950 2700 50  0001 C CNN
+F 1 "GND" H 2955 2777 50  0000 C CNN
+F 2 "" H 2950 2950 50  0001 C CNN
+F 3 "" H 2950 2950 50  0001 C CNN
+	1    2950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+36V #PWR011
+U 1 1 5E8B2797
+P 2950 1200
+F 0 "#PWR011" H 2950 1050 50  0001 C CNN
+F 1 "+36V" H 2965 1373 50  0000 C CNN
+F 2 "" H 2950 1200 50  0001 C CNN
+F 3 "" H 2950 1200 50  0001 C CNN
+	1    2950 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2020-03-04_04-53-16:BZT52C11-7-F CR1
+U 1 1 5E8E598A
+P 2950 2350
+F 0 "CR1" V 3203 2246 60  0000 R CNN
+F 1 "BZT52C11-7-F" V 3097 2246 60  0000 R CNN
+F 2 "SOD123" H 3150 1990 60  0001 C CNN
+F 3 "" H 2950 2350 60  0000 C CNN
+	1    2950 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 2500 2950 2400
+Wire Wire Line
+	2950 2950 2950 2800
+Wire Wire Line
+	2950 2400 2700 2400
+Wire Wire Line
+	2700 2400 2700 1550
+Connection ~ 2950 2400
+Wire Wire Line
+	2950 2400 2950 2350
+Wire Wire Line
+	2700 1550 3050 1550
+Wire Wire Line
+	2950 1200 2950 1750
+Wire Wire Line
+	3050 1750 2950 1750
+Connection ~ 2950 1750
+Wire Wire Line
+	2950 1750 2950 1950
+$Comp
+L Device:R R4
+U 1 1 5E956890
+P 350 -3700
+F 0 "R4" V 143 -3700 50  0000 C CNN
+F 1 "10K" V 234 -3700 50  0000 C CNN
+F 2 "" V 280 -3700 50  0001 C CNN
+F 3 "~" H 350 -3700 50  0001 C CNN
+	1    350  -3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	350  -3850 350  -4050
+Connection ~ 350  -4050
+Wire Wire Line
+	350  -4050 500  -4050
+$Comp
+L power:GND #PWR02
+U 1 1 5E96096C
+P 350 -3400
+F 0 "#PWR02" H 350 -3650 50  0001 C CNN
+F 1 "GND" H 355 -3573 50  0000 C CNN
+F 2 "" H 350 -3400 50  0001 C CNN
+F 3 "" H 350 -3400 50  0001 C CNN
+	1    350  -3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	350  -3400 350  -3550
+$Comp
+L Device:R R17
+U 1 1 5E97C91C
+P 7000 -3900
+F 0 "R17" V 6793 -3900 50  0000 C CNN
+F 1 "10K" V 6884 -3900 50  0000 C CNN
+F 2 "" V 6930 -3900 50  0001 C CNN
+F 3 "~" H 7000 -3900 50  0001 C CNN
+	1    7000 -3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 -4050 7000 -4250
+$Comp
+L power:GND #PWR024
+U 1 1 5E97C923
+P 7000 -3600
+F 0 "#PWR024" H 7000 -3850 50  0001 C CNN
+F 1 "GND" H 7005 -3773 50  0000 C CNN
+F 2 "" H 7000 -3600 50  0001 C CNN
+F 3 "" H 7000 -3600 50  0001 C CNN
+	1    7000 -3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 -3600 7000 -3750
+$Comp
+L power:GND #PWR021
+U 1 1 5E987FA6
+P 6600 -1000
+F 0 "#PWR021" H 6600 -1250 50  0001 C CNN
+F 1 "GND" H 6605 -1173 50  0000 C CNN
+F 2 "" H 6600 -1000 50  0001 C CNN
+F 3 "" H 6600 -1000 50  0001 C CNN
+	1    6600 -1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 -1000 6600 -1150
+$Comp
+L power:GND #PWR01
+U 1 1 5E993144
+P 0 -850
+F 0 "#PWR01" H 0   -1100 50  0001 C CNN
+F 1 "GND" H 5   -1023 50  0000 C CNN
+F 2 "" H 0   -850 50  0001 C CNN
+F 3 "" H 0   -850 50  0001 C CNN
+	1    0    -850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	0    -850 0    -950
+$Comp
+L pspice:CAP C_(optional_for_EMI_suppression)1
+U 1 1 5E9A26CF
+P 1350 3150
+F 0 "C_(optional_for_EMI_suppression)1" V 1035 3150 50  0000 C CNN
+F 1 "CAP" V 1126 3150 50  0000 C CNN
+F 2 "" H 1350 3150 50  0001 C CNN
+F 3 "~" H 1350 3150 50  0001 C CNN
+	1    1350 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 2700 700  2700
+Wire Wire Line
+	700  2700 700  3150
+Wire Wire Line
+	700  3150 1100 3150
+Wire Wire Line
+	1450 2700 2000 2700
+Wire Wire Line
+	2000 2700 2000 3150
+Wire Wire Line
+	2000 3150 1600 3150
+Wire Wire Line
+	700  3350 700  3150
+Connection ~ 700  3150
+Wire Wire Line
+	2000 3350 2000 3150
+Connection ~ 2000 3150
+Wire Wire Line
+	1750 1350 3050 1350
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5EA32A8A
+P 6550 3000
+F 0 "J3" H 6658 3281 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 6658 3190 50  0000 C CNN
+F 2 "" H 6550 3000 50  0001 C CNN
+F 3 "~" H 6550 3000 50  0001 C CNN
+	1    6550 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 -1550 10000 -1600
+Wire Wire Line
+	9050 -1650 9050 -1600
+$Comp
+L Device:R R24
+U 1 1 5EA84533
+P 9500 -1600
+F 0 "R24" H 9430 -1646 50  0000 R CNN
+F 1 "470" H 9430 -1555 50  0000 R CNN
+F 2 "" V 9430 -1600 50  0001 C CNN
+F 3 "~" H 9500 -1600 50  0001 C CNN
+	1    9500 -1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9650 -1600 10000 -1600
+Connection ~ 10000 -1600
+Wire Wire Line
+	10000 -1600 10100 -1600
+Wire Wire Line
+	9350 -1600 9050 -1600
+Connection ~ 9050 -1600
+Wire Wire Line
+	9050 -1600 9050 -1250
+$Comp
+L Device:R R11
+U 1 1 5EA9C68E
+P 2900 -1400
+F 0 "R11" H 2830 -1446 50  0000 R CNN
+F 1 "470" H 2830 -1355 50  0000 R CNN
+F 2 "" V 2830 -1400 50  0001 C CNN
+F 3 "~" H 2900 -1400 50  0001 C CNN
+	1    2900 -1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 -1300 3400 -1400
+Wire Wire Line
+	3400 -1400 3500 -1400
+Wire Wire Line
+	2450 -1450 2450 -1400
+Wire Wire Line
+	3050 -1400 3400 -1400
+Connection ~ 3400 -1400
+Wire Wire Line
+	2750 -1400 2450 -1400
+Connection ~ 2450 -1400
+Wire Wire Line
+	2450 -1400 2450 -1050
+$Comp
+L BD750L5FP-CE2:BD750L5FP-CE2 IC3
+U 1 1 5EB04DE0
+P 6650 1700
+F 0 "IC3" H 7200 1965 50  0000 C CNN
+F 1 "BD750L5FP-CE2" H 7200 1874 50  0000 C CNN
+F 2 "BD750L5FPCE2" H 7600 1800 50  0001 L CNN
+F 3 "https://www.rohm.com/datasheet/BD750L5FP-C/bd7xxl5fp-c-e" H 7600 1700 50  0001 L CNN
+F 4 "Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase." H 7600 1600 50  0001 L CNN "Description"
+F 5 "" H 7600 1500 50  0001 L CNN "Height"
+F 6 "ROHM Semiconductor" H 7600 1400 50  0001 L CNN "Manufacturer_Name"
+F 7 "BD750L5FP-CE2" H 7600 1300 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "755-BD750L5FP-CE2" H 7600 1200 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=755-BD750L5FP-CE2" H 7600 1100 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1246489P" H 7600 1000 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/1246489P" H 7600 900 50  0001 L CNN "RS Price/Stock"
+	1    6650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+36V #PWR019
+U 1 1 5EB074EE
+P 6100 900
+F 0 "#PWR019" H 6100 750 50  0001 C CNN
+F 1 "+36V" H 6115 1073 50  0000 C CNN
+F 2 "" H 6100 900 50  0001 C CNN
+F 3 "" H 6100 900 50  0001 C CNN
+	1    6100 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 5EB0835E
+P 5750 900
+F 0 "#PWR018" H 5750 750 50  0001 C CNN
+F 1 "+5V" H 5765 1073 50  0000 C CNN
+F 2 "" H 5750 900 50  0001 C CNN
+F 3 "" H 5750 900 50  0001 C CNN
+	1    5750 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5EB09AD5
+P 8000 1800
+F 0 "#PWR029" H 8000 1550 50  0001 C CNN
+F 1 "GND" H 8005 1627 50  0000 C CNN
+F 2 "" H 8000 1800 50  0001 C CNN
+F 3 "" H 8000 1800 50  0001 C CNN
+	1    8000 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1700 8000 1700
+Wire Wire Line
+	8000 1700 8000 1800
+$Comp
+L 2020-03-04_07-31-40:C1206C105K5RACTU C2
+U 1 1 5EB2E80C
+P 6350 1050
+F 0 "C2" V 6447 1154 60  0000 L CNN
+F 1 "C1206C105K5RACTU" V 6553 1154 60  0000 L CNN
+F 2 "CAP_C1206" H 6500 690 60  0001 C CNN
+F 3 "" H 6350 1050 60  0000 C CNN
+	1    6350 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 1700 6650 1700
+$Comp
+L power:GND #PWR020
+U 1 1 5EB5B58C
+P 6350 1450
+F 0 "#PWR020" H 6350 1200 50  0001 C CNN
+F 1 "GND" H 6355 1277 50  0000 C CNN
+F 2 "" H 6350 1450 50  0001 C CNN
+F 3 "" H 6350 1450 50  0001 C CNN
+	1    6350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1450 6350 1350
+Wire Wire Line
+	6350 1000 6350 1050
+$Comp
+L 2020-03-04_07-36-52:C1206C475K5RACTU C1
+U 1 1 5EB75677
+P 5550 1050
+F 0 "C1" V 5600 800 60  0000 L CNN
+F 1 "C1206C475K5RACTU" V 5700 50  60  0000 L CNN
+F 2 "C1206C" H 5700 690 60  0001 C CNN
+F 3 "" H 5550 1050 60  0000 C CNN
+	1    5550 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5EB998BE
+P 5550 1450
+F 0 "#PWR017" H 5550 1200 50  0001 C CNN
+F 1 "GND" H 5555 1277 50  0000 C CNN
+F 2 "" H 5550 1450 50  0001 C CNN
+F 3 "" H 5550 1450 50  0001 C CNN
+	1    5550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 900  5750 1000
+Wire Wire Line
+	5750 1800 6650 1800
+Wire Wire Line
+	5550 1450 5550 1350
+Wire Wire Line
+	5550 1000 5750 1000
+Connection ~ 5750 1000
+Wire Wire Line
+	5750 1000 5750 1800
+Wire Wire Line
+	5550 1000 5550 1050
+Wire Wire Line
+	6100 900  6100 1000
+Wire Wire Line
+	6350 1000 6100 1000
+Connection ~ 6100 1000
+Wire Wire Line
+	6100 1000 6100 1700
+$Comp
+L power:GND #PWR023
+U 1 1 5EC20E62
+P 7050 3600
+F 0 "#PWR023" H 7050 3350 50  0001 C CNN
+F 1 "GND" H 7055 3427 50  0000 C CNN
+F 2 "" H 7050 3600 50  0001 C CNN
+F 3 "" H 7050 3600 50  0001 C CNN
+	1    7050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR022
+U 1 1 5EC21C9D
+P 7050 2800
+F 0 "#PWR022" H 7050 2650 50  0001 C CNN
+F 1 "+5V" H 7065 2973 50  0000 C CNN
+F 2 "" H 7050 2800 50  0001 C CNN
+F 3 "" H 7050 2800 50  0001 C CNN
+	1    7050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2900 7050 2900
+Wire Wire Line
+	7050 2900 7050 2800
+Wire Wire Line
+	6750 3200 7050 3200
+Text GLabel 7750 3000 2    50   Input ~ 0
+PWM_Input-1
+Text GLabel 7750 3100 2    50   Input ~ 0
+PWM_Input-2
+$Comp
+L Device:D_Zener_Small Zener_MMSZ5V1T1G_2
+U 1 1 5EC7A154
+P 7600 3350
+F 0 "Zener_MMSZ5V1T1G_2" H 7400 3450 50  0000 L CNN
+F 1 "5.1V" H 7550 3550 50  0000 L CNN
+F 2 "" V 7600 3350 50  0001 C CNN
+F 3 "~" V 7600 3350 50  0001 C CNN
+	1    7600 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener_Small Zener_MMSZ5V1T1G_1
+U 1 1 5ECA02B0
+P 7400 3350
+F 0 "Zener_MMSZ5V1T1G_1" H 7200 3250 50  0000 L CNN
+F 1 "5.1V" H 7350 3150 50  0000 L CNN
+F 2 "" V 7400 3350 50  0001 C CNN
+F 3 "~" V 7400 3350 50  0001 C CNN
+	1    7400 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3250 7400 3000
+Wire Wire Line
+	7400 3000 7750 3000
+Wire Wire Line
+	7600 3250 7600 3100
+Wire Wire Line
+	7600 3100 7750 3100
+Wire Wire Line
+	7050 3200 7050 3600
+$Comp
+L power:GND #PWR026
+U 1 1 5ECF90D6
+P 7400 3600
+F 0 "#PWR026" H 7400 3350 50  0001 C CNN
+F 1 "GND" H 7405 3427 50  0000 C CNN
+F 2 "" H 7400 3600 50  0001 C CNN
+F 3 "" H 7400 3600 50  0001 C CNN
+	1    7400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5ECF9506
+P 7600 3600
+F 0 "#PWR028" H 7600 3350 50  0001 C CNN
+F 1 "GND" H 7605 3427 50  0000 C CNN
+F 2 "" H 7600 3600 50  0001 C CNN
+F 3 "" H 7600 3600 50  0001 C CNN
+	1    7600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3600 7400 3450
+Wire Wire Line
+	7600 3450 7600 3600
+Wire Wire Line
+	6750 3000 7400 3000
+Connection ~ 7400 3000
+Wire Wire Line
+	6750 3100 7600 3100
+Connection ~ 7600 3100
+$Comp
+L 2020-03-05_08-54-35:NZ9F10VT5G CR?
+U 1 1 5E67BCA0
+P 8900 -3700
+F 0 "CR?" V 9153 -3804 60  0000 R CNN
+F 1 "NZ9F10VT5G" V 9047 -3804 60  0000 R CNN
+F 2 "DIODE_SOD923_P85XP65" H 9100 -4060 60  0001 C CNN
+F 3 "" H 8900 -3700 60  0000 C CNN
+	1    8900 -3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 -4300 8900 -4300
+Wire Wire Line
+	8900 -4100 8900 -4300
+Connection ~ 8900 -4300
+Wire Wire Line
+	8900 -4300 9100 -4300
+Wire Wire Line
+	8500 -5450 8850 -5450
+$Comp
+L 2020-03-05_08-54-35:NZ9F10VT5G CR?
+U 1 1 5E68CEB6
+P 8850 -4850
+F 0 "CR?" V 9103 -4954 60  0000 R CNN
+F 1 "NZ9F10VT5G" V 8997 -4954 60  0000 R CNN
+F 2 "DIODE_SOD923_P85XP65" H 9050 -5210 60  0001 C CNN
+F 3 "" H 8850 -4850 60  0000 C CNN
+	1    8850 -4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 -5250 8850 -5450
+Connection ~ 8850 -5450
+Wire Wire Line
+	8850 -5450 9050 -5450
+Wire Wire Line
+	1950 -4100 2300 -4100
+Wire Wire Line
+	1900 -5250 2250 -5250
+$Comp
+L 2020-03-05_08-54-35:NZ9F10VT5G CR?
+U 1 1 5E6A020D
+P 2300 -3500
+F 0 "CR?" V 2553 -3604 60  0000 R CNN
+F 1 "NZ9F10VT5G" V 2447 -3604 60  0000 R CNN
+F 2 "DIODE_SOD923_P85XP65" H 2500 -3860 60  0001 C CNN
+F 3 "" H 2300 -3500 60  0000 C CNN
+	1    2300 -3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 2020-03-05_08-54-35:NZ9F10VT5G CR?
+U 1 1 5E6A1378
+P 2250 -4650
+F 0 "CR?" V 2503 -4754 60  0000 R CNN
+F 1 "NZ9F10VT5G" V 2397 -4754 60  0000 R CNN
+F 2 "DIODE_SOD923_P85XP65" H 2450 -5010 60  0001 C CNN
+F 3 "" H 2250 -4650 60  0000 C CNN
+	1    2250 -4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 -3900 2300 -4100
+Connection ~ 2300 -4100
+Wire Wire Line
+	2300 -4100 2500 -4100
+Wire Wire Line
+	2250 -5050 2250 -5250
+Connection ~ 2250 -5250
+Wire Wire Line
+	2250 -5250 2450 -5250
+$EndSCHEMATC

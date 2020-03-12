@@ -1,0 +1,18 @@
+.SI7850DP-T1-GE3 :1 ;VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL
+SOIC127P615X112-9N
+*STM Q
+*NGS
+*PLB 1="S_1" 2="S_2" 3="S_3" 4="G" 5="D_1" 6="D_2" 7="D_3" 8="D_4" 9="EP"
+*MXP 9
+*DFN SI7850DP-T1-GE3
+~!Manufacturer_Name (Vishay)
+~!Manufacturer_Part_Number (SI7850DP-T1-GE3)
+~!Mouser Part Number (781-SI7850DP-GE3)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf)
+~!Height (1.12mm)
+~!3D_Model (SI7850DP-T1-GE3)
+SI7850DP-T1-GE3
+1.1!U 2.1!U 3.1!U 4.1!U 9.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

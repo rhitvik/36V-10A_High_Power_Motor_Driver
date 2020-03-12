@@ -1,0 +1,146 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "SI7850DP-T1-GE3"
+   (description "VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL")
+   (family "TRX")
+   (package "SOIC127P615X112-9N")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf")
+   (attribute "Geometry.Height" "1.12mm")
+   (attribute "Manufacturer_Name" "Vishay")
+   (attribute "Manufacturer_Part_Number" "SI7850DP-T1-GE3")
+   (attribute "Mouser Part Number" "781-SI7850DP-GE3")
+   (attribute "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3")
+   (attribute "RS Part Number" "")
+   (attribute "RS Price/Stock" "")
+   (gate
+    (symbol "SI7850DP-T1-GE3")
+    (pin "S_1" 1 PS)
+    (pin "S_2" 2 PS)
+    (pin "S_3" 3 PS)
+    (pin "G" 4 PS)
+    (pin "EP" 9 PS)
+    (pin "D_4" 8 PS)
+    (pin "D_3" 7 PS)
+    (pin "D_2" 6 PS)
+    (pin "D_1" 5 PS)
+   )
+  )
+  (symbol "SI7850DP-T1-GE3"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 800 100) (pt 800 -600) (pt 200 -600) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 500 -800) (rot 90) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1000 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOIC127P615X112-9N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.775 3.245)
+      (pt 3.775 3.245)
+      (pt 3.775 -3.245)
+      (pt -3.775 -3.245)
+      (pt -3.775 3.245))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.45 2.945)
+      (pt 2.45 2.945)
+      (pt 2.45 -2.945)
+      (pt -2.45 -2.945)
+      (pt -2.45 2.945))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -2.45 1.675)
+      (pt -1.18 2.945))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -3.525 2.605)
+      (pt -2.45 2.605))))
+   (leg 1 (pt -2.988 1.905) (padstack 0))
+   (leg 2 (pt -2.988 0.635) (padstack 0))
+   (leg 3 (pt -2.988 -0.635) (padstack 0))
+   (leg 4 (pt -2.988 -1.905) (padstack 0))
+   (leg 5 (pt 2.988 -1.905) (padstack 0))
+   (leg 6 (pt 2.988 -0.635) (padstack 0))
+   (leg 7 (pt 2.988 0.635) (padstack 0))
+   (leg 8 (pt 2.988 1.905) (padstack 0))
+   (leg 9 (pt 0 0) (padstack 9))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.7 1.075 0 0 0))
+   )
+   (padstack 9
+    (plated false)
+    (pad (layer TCOP) (rectf 3.84 3.98 0 0 90))
+   )
+   (model "SI7850DP-T1-GE3.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

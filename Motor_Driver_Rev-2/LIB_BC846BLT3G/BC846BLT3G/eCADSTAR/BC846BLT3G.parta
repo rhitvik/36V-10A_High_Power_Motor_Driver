@@ -1,0 +1,72 @@
+(Japanese_coding: sjis)
+(function "ECS_224470"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2015-07-24-09:03:09)
+    (utime 2016-03-22-07:31:35)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "BC846BLT3G")
+)
+
+
+(pinAssign "ECS_224470"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2015-07-24-09:03:09)
+    (utime 2016-03-22-07:31:35)
+    (interface
+        (port "1" (symbPinId 1) (portName "B") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "E") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "C") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_224470")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "BC846BLT3G")
+)
+
+
+(part "BC846BLT3G"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2015-07-24-09:03:09)
+    (utime 2016-03-22-07:31:35)
+    (packageRef "BC846BLT3G")
+    (pinAssignRef "ECS_224470")
+    (interface
+        (port "1" (symbPinId 1) (portName "B") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "E") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "C") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Q")
+    (property "description" "")
+    (property "Manufacturer_Name" "ON Semiconductor")
+    (property "Manufacturer_Part_Number" "BC846BLT3G")
+    (property "Mouser_Part_Number" "863-BC846BLT3G")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G")
+    (property "RS_Part_Number" "7737611P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/7737611P")
+    (property "Datasheet_Link" "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF")
+    (property "compAreaTopHeight" 1.11)
+)
+
+

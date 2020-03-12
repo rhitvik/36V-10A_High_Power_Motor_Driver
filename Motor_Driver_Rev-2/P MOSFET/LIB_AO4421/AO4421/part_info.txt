@@ -1,0 +1,9 @@
+Manufacturer=Alpha & Omega Semiconductors
+PartNumber=AO4421
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=1.1
+Released=2018-06-03 12:00:28
+Downloaded=2020-03-03 03:19:12
+3D=Y

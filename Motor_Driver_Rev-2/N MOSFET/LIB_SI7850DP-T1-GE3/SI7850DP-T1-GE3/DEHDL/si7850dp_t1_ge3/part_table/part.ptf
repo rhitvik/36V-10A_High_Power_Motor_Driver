@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SI7850DP_T1_GE3'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Vishay", "SI7850DP-T1-GE3" (!) = "", "SOIC127P615X112-9N", "Small Outline Packages", "781-SI7850DP-GE3", "https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7850DP-GE3", "", "", "VISHAY - SI7850DP-T1-GE3. - N CHANNEL MOSFET, 60V, 10.3A, SOIC, FULL", "https://componentsearchengine.com/Datasheets/2/SI7850DP-T1-GE3.pdf", "1.12 mm"
+END_PART
+
+END.

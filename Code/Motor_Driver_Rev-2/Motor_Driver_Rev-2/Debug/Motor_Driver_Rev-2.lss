@@ -1,0 +1,549 @@
+
+Motor_Driver_Rev-2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000001f2  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000002  00800040  000001f2  00000286  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000005  00800042  00800042  00000288  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000288  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000002b8  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000058  00000000  00000000  000002f4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000548  00000000  00000000  0000034c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000003ab  00000000  00000000  00000894  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000003bb  00000000  00000000  00000c3f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000b8  00000000  00000000  00000ffc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000003d1  00000000  00000000  000010b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000014b  00000000  00000000  00001485  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  000015d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0a c0       	rjmp	.+20     	; 0x16 <__ctors_end>
+   2:	24 c0       	rjmp	.+72     	; 0x4c <__bad_interrupt>
+   4:	23 c0       	rjmp	.+70     	; 0x4c <__bad_interrupt>
+   6:	22 c0       	rjmp	.+68     	; 0x4c <__bad_interrupt>
+   8:	22 c0       	rjmp	.+68     	; 0x4e <__vector_4>
+   a:	20 c0       	rjmp	.+64     	; 0x4c <__bad_interrupt>
+   c:	1f c0       	rjmp	.+62     	; 0x4c <__bad_interrupt>
+   e:	1e c0       	rjmp	.+60     	; 0x4c <__bad_interrupt>
+  10:	1d c0       	rjmp	.+58     	; 0x4c <__bad_interrupt>
+  12:	1c c0       	rjmp	.+56     	; 0x4c <__bad_interrupt>
+  14:	1b c0       	rjmp	.+54     	; 0x4c <__bad_interrupt>
+
+00000016 <__ctors_end>:
+  16:	11 27       	eor	r17, r17
+  18:	1f bf       	out	0x3f, r17	; 63
+  1a:	cf e5       	ldi	r28, 0x5F	; 95
+  1c:	d0 e0       	ldi	r29, 0x00	; 0
+  1e:	de bf       	out	0x3e, r29	; 62
+  20:	cd bf       	out	0x3d, r28	; 61
+
+00000022 <__do_copy_data>:
+  22:	20 e0       	ldi	r18, 0x00	; 0
+  24:	a0 e4       	ldi	r26, 0x40	; 64
+  26:	b0 e0       	ldi	r27, 0x00	; 0
+  28:	e2 ef       	ldi	r30, 0xF2	; 242
+  2a:	f1 e4       	ldi	r31, 0x41	; 65
+  2c:	02 c0       	rjmp	.+4      	; 0x32 <__do_copy_data+0x10>
+  2e:	31 91       	ld	r19, Z+
+  30:	3d 93       	st	X+, r19
+  32:	a2 34       	cpi	r26, 0x42	; 66
+  34:	b2 07       	cpc	r27, r18
+  36:	d9 f7       	brne	.-10     	; 0x2e <__do_copy_data+0xc>
+
+00000038 <__do_clear_bss>:
+  38:	20 e0       	ldi	r18, 0x00	; 0
+  3a:	a2 e4       	ldi	r26, 0x42	; 66
+  3c:	b0 e0       	ldi	r27, 0x00	; 0
+  3e:	01 c0       	rjmp	.+2      	; 0x42 <.do_clear_bss_start>
+
+00000040 <.do_clear_bss_loop>:
+  40:	1d 93       	st	X+, r17
+
+00000042 <.do_clear_bss_start>:
+  42:	a7 34       	cpi	r26, 0x47	; 71
+  44:	b2 07       	cpc	r27, r18
+  46:	e1 f7       	brne	.-8      	; 0x40 <.do_clear_bss_loop>
+  48:	cc d0       	rcall	.+408    	; 0x1e2 <main>
+  4a:	d1 c0       	rjmp	.+418    	; 0x1ee <_exit>
+
+0000004c <__bad_interrupt>:
+  4c:	d9 cf       	rjmp	.-78     	; 0x0 <__vectors>
+
+0000004e <__vector_4>:
+		}
+	}
+	
+}
+
+ISR(TIM0_OVF_vect){ // Is invoked when counter reaches ICR top (as set by WGM settings)
+  4e:	1f 93       	push	r17
+  50:	0f 93       	push	r16
+  52:	0f b7       	in	r16, 0x3f	; 63
+  54:	0f 93       	push	r16
+  56:	10 e0       	ldi	r17, 0x00	; 0
+  58:	4f 93       	push	r20
+  5a:	5f 93       	push	r21
+  5c:	6f 93       	push	r22
+	// Here, 10 milliseconds have elapsed	
+	ovfCnt++;
+  5e:	46 a1       	lds	r20, 0x46	; 0x800046 <ovfCnt>
+  60:	4f 5f       	subi	r20, 0xFF	; 255
+  62:	46 a9       	sts	0x46, r20	; 0x800046 <ovfCnt>
+	if(ovfCnt >= 5){
+  64:	46 a1       	lds	r20, 0x46	; 0x800046 <ovfCnt>
+  66:	45 30       	cpi	r20, 0x05	; 5
+  68:	c0 f0       	brcs	.+48     	; 0x9a <__stack+0x3b>
+		// 50 milliseconds have elapsed
+		ovfCnt = 0; // set the ovfCnt to 0
+  6a:	16 a9       	sts	0x46, r17	; 0x800046 <ovfCnt>
+		shiftDuty ^= shiftDuty; // invert shiftDuty to be read outside ISR
+  6c:	63 a1       	lds	r22, 0x43	; 0x800043 <shiftDuty>
+  6e:	53 a1       	lds	r21, 0x43	; 0x800043 <shiftDuty>
+  70:	41 e0       	ldi	r20, 0x01	; 1
+  72:	65 13       	cpse	r22, r21
+  74:	01 c0       	rjmp	.+2      	; 0x78 <__stack+0x19>
+  76:	40 e0       	ldi	r20, 0x00	; 0
+  78:	43 a9       	sts	0x43, r20	; 0x800043 <shiftDuty>
+		ovfCnt1++;		
+  7a:	45 a1       	lds	r20, 0x45	; 0x800045 <ovfCnt1>
+  7c:	4f 5f       	subi	r20, 0xFF	; 255
+  7e:	45 a9       	sts	0x45, r20	; 0x800045 <ovfCnt1>
+		if (ovfCnt1 >= 20){
+  80:	45 a1       	lds	r20, 0x45	; 0x800045 <ovfCnt1>
+  82:	44 31       	cpi	r20, 0x14	; 20
+  84:	50 f0       	brcs	.+20     	; 0x9a <__stack+0x3b>
+			ovfCnt1 = 0; // set the ovfCnt1 to 0
+  86:	15 a9       	sts	0x45, r17	; 0x800045 <ovfCnt1>
+			// Here, 1 second has elapsed!!
+			SecElp++;
+  88:	44 a1       	lds	r20, 0x44	; 0x800044 <SecElp>
+  8a:	4f 5f       	subi	r20, 0xFF	; 255
+  8c:	44 a9       	sts	0x44, r20	; 0x800044 <SecElp>
+			if (SecElp >= 5){
+  8e:	44 a1       	lds	r20, 0x44	; 0x800044 <SecElp>
+  90:	45 30       	cpi	r20, 0x05	; 5
+  92:	18 f0       	brcs	.+6      	; 0x9a <__stack+0x3b>
+				SecElp = 0;
+  94:	14 a9       	sts	0x44, r17	; 0x800044 <SecElp>
+				//Here, 5 seconds have elapsed
+				FiveSecElp = true;
+  96:	41 e0       	ldi	r20, 0x01	; 1
+  98:	42 a9       	sts	0x42, r20	; 0x800042 <__data_end>
+			}
+		}
+	}
+}
+  9a:	6f 91       	pop	r22
+  9c:	5f 91       	pop	r21
+  9e:	4f 91       	pop	r20
+  a0:	0f 91       	pop	r16
+  a2:	0f bf       	out	0x3f, r16	; 63
+  a4:	0f 91       	pop	r16
+  a6:	1f 91       	pop	r17
+  a8:	18 95       	reti
+
+000000aa <_Z21Initialize_PWM_paramsv>:
+
+void Initialize_PWM_params(void){
+	cli();	//clear global interrupts
+  aa:	f8 94       	cli
+	
+	DDRB |= (1U<<PINB0) | (1U<<PINB1);
+  ac:	41 b1       	in	r20, 0x01	; 1
+  ae:	43 60       	ori	r20, 0x03	; 3
+  b0:	41 b9       	out	0x01, r20	; 1
+	//set pin B0, B1 and as outputs irrespective of their previous pin function
+	
+	PORTB &= 0x0C;
+  b2:	42 b1       	in	r20, 0x02	; 2
+  b4:	4c 70       	andi	r20, 0x0C	; 12
+  b6:	42 b9       	out	0x02, r20	; 2
+	//DDRB &= ~(1U<<PINB3);
+	//PUEB |= (1U<<PUEB3);
+	// Pull up on Pin B3
+	//not needed unless fuse settings altered for RST pin to be used as GPIO
+	
+	TCCR0A |= (1U<<WGM01);
+  b8:	4e b5       	in	r20, 0x2e	; 46
+  ba:	42 60       	ori	r20, 0x02	; 2
+  bc:	4e bd       	out	0x2e, r20	; 46
+	TCCR0B |= (1U<<WGM03) | (1U<<WGM02);
+  be:	4d b5       	in	r20, 0x2d	; 45
+  c0:	48 61       	ori	r20, 0x18	; 24
+  c2:	4d bd       	out	0x2d, r20	; 45
+	// set the waveform mode to Fast PWM (16 bit registers are now accessible)
+	
+	ICR0 = 10000;
+  c4:	40 e1       	ldi	r20, 0x10	; 16
+  c6:	57 e2       	ldi	r21, 0x27	; 39
+  c8:	53 bd       	out	0x23, r21	; 35
+  ca:	42 bd       	out	0x22, r20	; 34
+	// counter resets itself to 0 when it reaches 10000
+	// will generate a PWM frequency of 100 Hz @ 1MHz via prescalar selection
+	
+	TCCR0B |= (1U<<CS01);
+  cc:	4d b5       	in	r20, 0x2d	; 45
+  ce:	42 60       	ori	r20, 0x02	; 2
+  d0:	4d bd       	out	0x2d, r20	; 45
+	// the controller will count and fill the register at 1MHz
+	
+	//TCCR0A |= (1U<<COM0A1) | (1U<<COM0B1);
+	// Clear OC0A/OC0B on compare match
+	
+	TIMSK0 |= (1U<<TOIE0);
+  d2:	4b b5       	in	r20, 0x2b	; 43
+  d4:	41 60       	ori	r20, 0x01	; 1
+  d6:	4b bd       	out	0x2b, r20	; 43
+	//Set Timer Overflow Interrupt Enable
+	
+	sei();	// enable global interrupts
+  d8:	78 94       	sei
+  da:	08 95       	ret
+
+000000dc <_Z14turnON_PWMpin1v>:
+}
+
+void turnON_PWMpin1(void){
+	cli();
+  dc:	f8 94       	cli
+	TCCR0A |= (1U<<COM0A1);		// Clear OC0A pin on compare match
+  de:	4e b5       	in	r20, 0x2e	; 46
+  e0:	40 68       	ori	r20, 0x80	; 128
+  e2:	4e bd       	out	0x2e, r20	; 46
+	sei();
+  e4:	78 94       	sei
+  e6:	08 95       	ret
+
+000000e8 <_Z14turnON_PWMpin2v>:
+}
+void turnON_PWMpin2(void){
+	cli();
+  e8:	f8 94       	cli
+	TCCR0A |= (1U<<COM0B1);		// Clear OC0B pin on compare match
+  ea:	4e b5       	in	r20, 0x2e	; 46
+  ec:	40 62       	ori	r20, 0x20	; 32
+  ee:	4e bd       	out	0x2e, r20	; 46
+	sei();
+  f0:	78 94       	sei
+  f2:	08 95       	ret
+
+000000f4 <_Z15turnOFF_PWMpin1v>:
+}
+
+void turnOFF_PWMpin1(void){
+	TCCR0A &= ~(1U<<COM0A1);		// Disable PWM on OC0A pin
+  f4:	4e b5       	in	r20, 0x2e	; 46
+  f6:	4f 77       	andi	r20, 0x7F	; 127
+  f8:	4e bd       	out	0x2e, r20	; 46
+	PORTB &= ~(1<<PINB0);		// Clear the pinB0
+  fa:	10 98       	cbi	0x02, 0	; 2
+  fc:	08 95       	ret
+
+000000fe <_Z15turnOFF_PWMpin2v>:
+}
+void turnOFF_PWMpin2(void){
+	TCCR0A &= ~(1U<<COM0B1);		// Disable PWM on OC0B pin
+  fe:	4e b5       	in	r20, 0x2e	; 46
+ 100:	4f 7d       	andi	r20, 0xDF	; 223
+ 102:	4e bd       	out	0x2e, r20	; 46
+	PORTB &= ~(1<<PINB1);		// Clear the pinB1
+ 104:	11 98       	cbi	0x02, 1	; 2
+ 106:	08 95       	ret
+
+00000108 <_Z13Ramp_Maneuverv>:
+	
+	while(1);
+
+}	//int main()
+
+void Ramp_Maneuver(void){
+ 108:	cf 93       	push	r28
+	bool latch = 0;
+	bool fifty_ms_del = 0; // we will compare the value of this with shiftduty in ISR to change duty value
+ 10a:	c0 e0       	ldi	r28, 0x00	; 0
+	while(1);
+
+}	//int main()
+
+void Ramp_Maneuver(void){
+	bool latch = 0;
+ 10c:	50 e0       	ldi	r21, 0x00	; 0
+ 10e:	01 c0       	rjmp	.+2      	; 0x112 <_Z13Ramp_Maneuverv+0xa>
+	while(2){
+		if (FiveSecElp == true)
+		{
+			FiveSecElp = false;
+			mode = mode+1;
+			latch = (latch == true)? false:latch; // set latch to false
+ 110:	50 e0       	ldi	r21, 0x00	; 0
+	// mode 1 -->  Ramp up the motor from 0% to 100% forward over 5 seconds.
+	// mode 2 -->  Ramp down the motor from 100% forward to 0% over 5 seconds.
+	// mode 3 -->  Ramp up the motor from 0% to 100% reverse over 5 seconds.
+	// mode 4 -->  Ramp down the motor from 100% reverse to 0% over 5 seconds.
+	while(2){
+		if (FiveSecElp == true)
+ 112:	42 a1       	lds	r20, 0x42	; 0x800042 <__data_end>
+ 114:	44 23       	and	r20, r20
+ 116:	51 f0       	breq	.+20     	; 0x12c <_Z13Ramp_Maneuverv+0x24>
+		{
+			FiveSecElp = false;
+ 118:	12 a9       	sts	0x42, r17	; 0x800042 <__data_end>
+			mode = mode+1;
+ 11a:	40 a1       	lds	r20, 0x40	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 11c:	4f 5f       	subi	r20, 0xFF	; 255
+ 11e:	40 a9       	sts	0x40, r20	; 0x800040 <__DATA_REGION_ORIGIN__>
+			latch = (latch == true)? false:latch; // set latch to false
+			if (mode > 4)
+ 120:	40 a1       	lds	r20, 0x40	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 122:	45 30       	cpi	r20, 0x05	; 5
+ 124:	a8 f3       	brcs	.-22     	; 0x110 <_Z13Ramp_Maneuverv+0x8>
+			{
+				turnOFF_PWMpin1();
+ 126:	e6 df       	rcall	.-52     	; 0xf4 <_Z15turnOFF_PWMpin1v>
+				turnOFF_PWMpin2();
+ 128:	ea df       	rcall	.-44     	; 0xfe <_Z15turnOFF_PWMpin2v>
+			}
+			OCR0B = OCR0B - 100; //this will decrease the duty of PWM pin 2 by 1% 
+		}
+	}
+	
+}
+ 12a:	59 c0       	rjmp	.+178    	; 0x1de <_Z13Ramp_Maneuverv+0xd6>
+				turnOFF_PWMpin1();
+				turnOFF_PWMpin2();
+				break;
+			}
+		}
+		else if ((mode == 1) && (fifty_ms_del != shiftDuty))
+ 12c:	40 a1       	lds	r20, 0x40	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 12e:	41 30       	cpi	r20, 0x01	; 1
+ 130:	e9 f5       	brne	.+122    	; 0x1ac <_Z13Ramp_Maneuverv+0xa4>
+ 132:	43 a1       	lds	r20, 0x43	; 0x800043 <shiftDuty>
+ 134:	c4 13       	cpse	r28, r20
+ 136:	36 c0       	rjmp	.+108    	; 0x1a4 <_Z13Ramp_Maneuverv+0x9c>
+ 138:	39 c0       	rjmp	.+114    	; 0x1ac <_Z13Ramp_Maneuverv+0xa4>
+			// turn on PWM pins 1 after PWM 2 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+			{
+				latch = true;
+				turnOFF_PWMpin2();
+ 13a:	e1 df       	rcall	.-62     	; 0xfe <_Z15turnOFF_PWMpin2v>
+				turnON_PWMpin1();
+ 13c:	cf df       	rcall	.-98     	; 0xdc <_Z14turnON_PWMpin1v>
+			}
+			OCR0A = OCR0A + 100; //this will increase the duty of PWM pin 1 by 1%
+ 13e:	46 b5       	in	r20, 0x26	; 38
+ 140:	57 b5       	in	r21, 0x27	; 39
+ 142:	4c 59       	subi	r20, 0x9C	; 156
+ 144:	5f 4f       	sbci	r21, 0xFF	; 255
+ 146:	57 bd       	out	0x27, r21	; 39
+ 148:	46 bd       	out	0x26, r20	; 38
+ 14a:	51 e0       	ldi	r21, 0x01	; 1
+ 14c:	e2 cf       	rjmp	.-60     	; 0x112 <_Z13Ramp_Maneuverv+0xa>
+		}
+		else if ((mode == 2) && (fifty_ms_del != shiftDuty))
+ 14e:	43 a1       	lds	r20, 0x43	; 0x800043 <shiftDuty>
+ 150:	c4 13       	cpse	r28, r20
+ 152:	30 c0       	rjmp	.+96     	; 0x1b4 <_Z13Ramp_Maneuverv+0xac>
+ 154:	33 c0       	rjmp	.+102    	; 0x1bc <_Z13Ramp_Maneuverv+0xb4>
+			// turn on PWM pins 1 after PWM 2 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+			{
+				latch = true;
+				turnOFF_PWMpin2();
+ 156:	d3 df       	rcall	.-90     	; 0xfe <_Z15turnOFF_PWMpin2v>
+				turnON_PWMpin1();
+ 158:	c1 df       	rcall	.-126    	; 0xdc <_Z14turnON_PWMpin1v>
+			}
+			OCR0A = OCR0A - 100; //this will increase the duty of PWM pin 1 by 1%
+ 15a:	46 b5       	in	r20, 0x26	; 38
+ 15c:	57 b5       	in	r21, 0x27	; 39
+ 15e:	44 56       	subi	r20, 0x64	; 100
+ 160:	51 0b       	sbc	r21, r17
+ 162:	57 bd       	out	0x27, r21	; 39
+ 164:	46 bd       	out	0x26, r20	; 38
+ 166:	51 e0       	ldi	r21, 0x01	; 1
+ 168:	d4 cf       	rjmp	.-88     	; 0x112 <_Z13Ramp_Maneuverv+0xa>
+		}
+		else if ((mode == 3) && (fifty_ms_del != shiftDuty))
+ 16a:	43 a1       	lds	r20, 0x43	; 0x800043 <shiftDuty>
+ 16c:	c4 13       	cpse	r28, r20
+ 16e:	2a c0       	rjmp	.+84     	; 0x1c4 <_Z13Ramp_Maneuverv+0xbc>
+ 170:	2d c0       	rjmp	.+90     	; 0x1cc <_Z13Ramp_Maneuverv+0xc4>
+			// turn on PWM pins 2 after PWM 1 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+			{
+				latch = true;
+				turnOFF_PWMpin1();
+ 172:	c0 df       	rcall	.-128    	; 0xf4 <_Z15turnOFF_PWMpin1v>
+				turnON_PWMpin2();
+ 174:	b9 df       	rcall	.-142    	; 0xe8 <_Z14turnON_PWMpin2v>
+			}
+			OCR0B = OCR0B + 100; //this will increase the duty of PWM pin 2 by 1%
+ 176:	44 b5       	in	r20, 0x24	; 36
+ 178:	55 b5       	in	r21, 0x25	; 37
+ 17a:	4c 59       	subi	r20, 0x9C	; 156
+ 17c:	5f 4f       	sbci	r21, 0xFF	; 255
+ 17e:	55 bd       	out	0x25, r21	; 37
+ 180:	44 bd       	out	0x24, r20	; 36
+ 182:	51 e0       	ldi	r21, 0x01	; 1
+ 184:	c6 cf       	rjmp	.-116    	; 0x112 <_Z13Ramp_Maneuverv+0xa>
+		}
+		else if ((mode == 4) && (fifty_ms_del != shiftDuty))
+ 186:	43 a1       	lds	r20, 0x43	; 0x800043 <shiftDuty>
+ 188:	c4 13       	cpse	r28, r20
+ 18a:	25 c0       	rjmp	.+74     	; 0x1d6 <_Z13Ramp_Maneuverv+0xce>
+ 18c:	c4 2f       	mov	r28, r20
+ 18e:	c1 cf       	rjmp	.-126    	; 0x112 <_Z13Ramp_Maneuverv+0xa>
+			// turn on PWM pins 2 after PWM 1 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+			{
+				latch = true;
+				turnOFF_PWMpin1();
+ 190:	b1 df       	rcall	.-158    	; 0xf4 <_Z15turnOFF_PWMpin1v>
+				turnON_PWMpin2();
+ 192:	aa df       	rcall	.-172    	; 0xe8 <_Z14turnON_PWMpin2v>
+			}
+			OCR0B = OCR0B - 100; //this will decrease the duty of PWM pin 2 by 1% 
+ 194:	44 b5       	in	r20, 0x24	; 36
+ 196:	55 b5       	in	r21, 0x25	; 37
+ 198:	44 56       	subi	r20, 0x64	; 100
+ 19a:	51 0b       	sbc	r21, r17
+ 19c:	55 bd       	out	0x25, r21	; 37
+ 19e:	44 bd       	out	0x24, r20	; 36
+ 1a0:	51 e0       	ldi	r21, 0x01	; 1
+ 1a2:	b7 cf       	rjmp	.-146    	; 0x112 <_Z13Ramp_Maneuverv+0xa>
+				break;
+			}
+		}
+		else if ((mode == 1) && (fifty_ms_del != shiftDuty))
+		{
+			fifty_ms_del = shiftDuty; // make the values same so that it has to wait another 20 ms before entering the loop
+ 1a4:	c3 a1       	lds	r28, 0x43	; 0x800043 <shiftDuty>
+			// turn off PWM pin 2 to ensure safety
+			// turn on PWM pins 1 after PWM 2 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+ 1a6:	51 13       	cpse	r21, r17
+ 1a8:	ca cf       	rjmp	.-108    	; 0x13e <_Z13Ramp_Maneuverv+0x36>
+ 1aa:	c7 cf       	rjmp	.-114    	; 0x13a <_Z13Ramp_Maneuverv+0x32>
+				turnOFF_PWMpin2();
+				turnON_PWMpin1();
+			}
+			OCR0A = OCR0A + 100; //this will increase the duty of PWM pin 1 by 1%
+		}
+		else if ((mode == 2) && (fifty_ms_del != shiftDuty))
+ 1ac:	40 a1       	lds	r20, 0x40	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 1ae:	42 30       	cpi	r20, 0x02	; 2
+ 1b0:	29 f4       	brne	.+10     	; 0x1bc <_Z13Ramp_Maneuverv+0xb4>
+ 1b2:	cd cf       	rjmp	.-102    	; 0x14e <_Z13Ramp_Maneuverv+0x46>
+		{
+			fifty_ms_del = shiftDuty; // make the values same so that it has to wait another 20 ms before entering the loop
+ 1b4:	c3 a1       	lds	r28, 0x43	; 0x800043 <shiftDuty>
+			// turn off PWM pin 2 to ensure safety
+			// turn on PWM pins 1 after PWM 2 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+ 1b6:	51 13       	cpse	r21, r17
+ 1b8:	d0 cf       	rjmp	.-96     	; 0x15a <_Z13Ramp_Maneuverv+0x52>
+ 1ba:	cd cf       	rjmp	.-102    	; 0x156 <_Z13Ramp_Maneuverv+0x4e>
+				turnOFF_PWMpin2();
+				turnON_PWMpin1();
+			}
+			OCR0A = OCR0A - 100; //this will increase the duty of PWM pin 1 by 1%
+		}
+		else if ((mode == 3) && (fifty_ms_del != shiftDuty))
+ 1bc:	40 a1       	lds	r20, 0x40	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 1be:	43 30       	cpi	r20, 0x03	; 3
+ 1c0:	29 f4       	brne	.+10     	; 0x1cc <_Z13Ramp_Maneuverv+0xc4>
+ 1c2:	d3 cf       	rjmp	.-90     	; 0x16a <_Z13Ramp_Maneuverv+0x62>
+		{
+			fifty_ms_del = shiftDuty; // make the values same so that it has to wait another 20 ms before entering the loop
+ 1c4:	c3 a1       	lds	r28, 0x43	; 0x800043 <shiftDuty>
+			// turn off PWM pin 1 to ensure safety
+			// turn on PWM pins 2 after PWM 1 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+ 1c6:	51 13       	cpse	r21, r17
+ 1c8:	d6 cf       	rjmp	.-84     	; 0x176 <_Z13Ramp_Maneuverv+0x6e>
+ 1ca:	d3 cf       	rjmp	.-90     	; 0x172 <_Z13Ramp_Maneuverv+0x6a>
+				turnOFF_PWMpin1();
+				turnON_PWMpin2();
+			}
+			OCR0B = OCR0B + 100; //this will increase the duty of PWM pin 2 by 1%
+		}
+		else if ((mode == 4) && (fifty_ms_del != shiftDuty))
+ 1cc:	40 a1       	lds	r20, 0x40	; 0x800040 <__DATA_REGION_ORIGIN__>
+ 1ce:	44 30       	cpi	r20, 0x04	; 4
+ 1d0:	09 f0       	breq	.+2      	; 0x1d4 <_Z13Ramp_Maneuverv+0xcc>
+ 1d2:	9f cf       	rjmp	.-194    	; 0x112 <_Z13Ramp_Maneuverv+0xa>
+ 1d4:	d8 cf       	rjmp	.-80     	; 0x186 <_Z13Ramp_Maneuverv+0x7e>
+		{
+			fifty_ms_del = shiftDuty; // make the values same so that it has to wait another 20 ms before entering the loop
+ 1d6:	c3 a1       	lds	r28, 0x43	; 0x800043 <shiftDuty>
+			// turn off PWM pin 1 to ensure safety
+			// turn on PWM pins 2 after PWM 1 is off
+			// compare fifty_ms_del with shiftDuty
+			if (latch == false)
+ 1d8:	51 13       	cpse	r21, r17
+ 1da:	dc cf       	rjmp	.-72     	; 0x194 <_Z13Ramp_Maneuverv+0x8c>
+ 1dc:	d9 cf       	rjmp	.-78     	; 0x190 <_Z13Ramp_Maneuverv+0x88>
+			}
+			OCR0B = OCR0B - 100; //this will decrease the duty of PWM pin 2 by 1% 
+		}
+	}
+	
+}
+ 1de:	cf 91       	pop	r28
+ 1e0:	08 95       	ret
+
+000001e2 <main>:
+void turnOFF_PWMpin1(void);			// turn off PWM pin1
+void turnOFF_PWMpin2(void);			// turn off PWM pin2
+
+int main(void)
+{
+	CCP = 0xD8;		// Unlock special consideration register
+ 1e2:	48 ed       	ldi	r20, 0xD8	; 216
+ 1e4:	4c bf       	out	0x3c, r20	; 60
+	CLKPSR = 0x00;	// Set the system clock to 8 MHz
+ 1e6:	16 bf       	out	0x36, r17	; 54
+	
+	// sei();	// Enable Global Interrupts
+	// may or may not have been enabled in the first place 
+	
+	Initialize_PWM_params(); 
+ 1e8:	60 df       	rcall	.-320    	; 0xaa <_Z21Initialize_PWM_paramsv>
+	// Initializes general PWM parameters
+	// but does not make PWM pins to start modulate right away
+	// interrupts overflow has started
+	
+	Ramp_Maneuver();
+ 1ea:	8e df       	rcall	.-228    	; 0x108 <_Z13Ramp_Maneuverv>
+ 1ec:	ff cf       	rjmp	.-2      	; 0x1ec <main+0xa>
+
+000001ee <_exit>:
+ 1ee:	f8 94       	cli
+
+000001f0 <__stop_program>:
+ 1f0:	ff cf       	rjmp	.-2      	; 0x1f0 <__stop_program>

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name SI7850DP-T1-GE3)(type Legacy)(uri "${KIPRJMOD}/N MOSFET/LIB_SI7850DP-T1-GE3/SI7850DP-T1-GE3/KiCad/SI7850DP-T1-GE3.mod")(options "")(descr ""))
+)

@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model BC846BLT3G
+#/224470/121980/2.45/3/3/Transistor
+DEF BC846BLT3G Q 0 30 Y Y 1 F N
+F0 "Q" 650 300 50 H V L CNN
+F1 "BC846BLT3G" 650 200 50 H V L CNN
+F2 "SOT96P237X111-3N" 650 100 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF" 650 0 50 H I L CNN
+F4 "" 650 -100 50 H I L CNN "Description"
+F5 "1.11" 650 -200 50 H I L CNN "Height"
+F6 "ON Semiconductor" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "BC846BLT3G" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "863-BC846BLT3G" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G" 650 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "7737611P" 650 -700 50 H I L CNN "RS Part Number"
+F11 "http://uk.rs-online.com/web/p/products/7737611P" 650 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+X B 1 0 0 200 R 50 50 0 0 U
+X E 2 0 -100 200 R 50 50 0 0 U
+X C 3 800 0 200 L 50 50 0 0 U
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

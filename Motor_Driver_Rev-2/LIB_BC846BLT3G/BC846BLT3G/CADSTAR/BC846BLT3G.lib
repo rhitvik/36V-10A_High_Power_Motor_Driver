@@ -1,0 +1,18 @@
+.BC846BLT3G :1
+SOT96P237X111-3N
+*STM Q
+*NGS
+*PLB 1="B" 2="E" 3="C"
+*MXP 3
+*DFN BC846BLT3G
+~!Manufacturer_Name (ON Semiconductor)
+~!Manufacturer_Part_Number (BC846BLT3G)
+~!Mouser Part Number (863-BC846BLT3G)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=863-BC846BLT3G)
+~!RS Part Number (7737611P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/7737611P)
+~!Link Datasheet (http://www.onsemi.com/pub/Collateral/BC846ALT1-D.PDF)
+~!Height (1.11mm)
+~!3D_Model (BC846BLT3G)
+BC846BLT3G
+1.1!U 2.1!U 3.1!U 

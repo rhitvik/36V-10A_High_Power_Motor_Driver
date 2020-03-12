@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1SMA5930BT3G
+D ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA
+K
+F http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF
+$ENDCMP
+#
+#End Doc Library

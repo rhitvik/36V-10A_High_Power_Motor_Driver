@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SI7850DP-T1-GE3"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-07-30-11:15:00)
+    (mountForm default
+        (footprintRef "SOIC127P615X112-9N")
+        (spec "System")
+    )
+)

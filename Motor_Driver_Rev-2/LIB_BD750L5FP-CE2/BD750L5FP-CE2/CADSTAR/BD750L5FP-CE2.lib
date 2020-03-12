@@ -1,0 +1,17 @@
+.BD750L5FP-CE2 :1 ;Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase.
+BD750L5FPCE2
+*STM IC
+*NGS
+*PLB 1="VCC" 3="VOUT" 4="GND"
+*MXP 3
+*DFN BD750L5FP-CE2
+~!Manufacturer_Name (ROHM Semiconductor)
+~!Manufacturer_Part_Number (BD750L5FP-CE2)
+~!Mouser Part Number (755-BD750L5FP-CE2)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=755-BD750L5FP-CE2)
+~!RS Part Number (1246489P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/1246489P)
+~!Link Datasheet (https://www.rohm.com/datasheet/BD750L5FP-C/bd7xxl5fp-c-e)
+~!Height (-)
+BD750L5FP-CE2
+1.1!U 3.1!U 4.1!U 

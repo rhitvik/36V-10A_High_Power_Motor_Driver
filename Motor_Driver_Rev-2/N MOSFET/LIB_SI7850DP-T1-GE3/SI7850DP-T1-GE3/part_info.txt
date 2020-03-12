@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=SI7850DP-T1-GE3
+PartCategory=MOSFET (N-Channel)
+PackageCategory=Small Outline Packages
+PinCount=9
+Version=1.1
+Released=2018-07-30 11:15:00
+Downloaded=2020-03-03 03:35:41
+3D=Y

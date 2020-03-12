@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '1SMA5930BT3G'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "ON Semiconductor", "1SMA5930BT3G" (!) = "", "DIOM5226X220N", "Diodes Moulded", "863-1SMA5930BT3G", "https://www.mouser.com/Search/Refine.aspx?Keyword=863-1SMA5930BT3G", "7925353", "https://uk.rs-online.com/web/p/products/7925353", "ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA", "http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF", "2.2 mm"
+END_PART
+
+END.

@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_410546"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-05-04-08:31:21)
+    (utime 2017-05-04-08:31:21)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "1SMA5930BT3G")
+)
+
+
+(pinAssign "ECS_410546"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-05-04-08:31:21)
+    (utime 2017-05-04-08:31:21)
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_410546")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "1SMA5930BT3G")
+)
+
+
+(part "1SMA5930BT3G"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-05-04-08:31:21)
+    (utime 2017-05-04-08:31:21)
+    (packageRef "1SMA5930BT3G")
+    (pinAssignRef "ECS_410546")
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "Z")
+    (property "description" "ON Semiconductor 1SMA5930BT3G Zener Diode, 16V 5% 1.5 W SMT 2-Pin SMA")
+    (property "Manufacturer_Name" "ON Semiconductor")
+    (property "Manufacturer_Part_Number" "1SMA5930BT3G")
+    (property "Mouser_Part_Number" "863-1SMA5930BT3G")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=863-1SMA5930BT3G")
+    (property "RS_Part_Number" "7925353")
+    (property "RS_Price/Stock" "https://uk.rs-online.com/web/p/products/7925353")
+    (property "Datasheet_Link" "http://www.onsemi.com/pub/Collateral/1SMA5913BT3-D.PDF")
+    (property "compAreaTopHeight" 2.2)
+)
+
+

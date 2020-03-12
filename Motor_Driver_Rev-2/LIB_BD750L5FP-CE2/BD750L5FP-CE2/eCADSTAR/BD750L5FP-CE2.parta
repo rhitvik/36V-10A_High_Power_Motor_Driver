@@ -1,0 +1,71 @@
+(Japanese_coding: sjis)
+(function "ECS_236350"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-09-07-12:48:32)
+    (utime 2018-09-08-06:30:42)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "3" (symbPinId 2) (portType INOUT))
+        (port "4" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "BD750L5FP-CE2")
+)
+
+
+(pinAssign "ECS_236350"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-09-07-12:48:32)
+    (utime 2018-09-08-06:30:42)
+    (interface
+        (port "1" (symbPinId 1) (portName "VCC") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "VOUT") (portType INOUT))
+        (port "4" (symbPinId 3) (portName "GND") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_236350")
+                (port "1" (match "1"))
+                (port "3" (match "3"))
+                (port "4" (match "4"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "BD750L5FP-CE2")
+)
+
+
+(part "BD750L5FP-CE2"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-09-07-12:48:32)
+    (utime 2018-09-08-06:30:42)
+    (packageRef "BD750L5FP-CE2")
+    (pinAssignRef "ECS_236350")
+    (interface
+        (port "1" (symbPinId 1) (portName "VCC") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "VOUT") (portType INOUT))
+        (port "4" (symbPinId 3) (portName "GND") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "IC")
+    (property "description" "Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase.")
+    (property "Manufacturer_Name" "ROHM Semiconductor")
+    (property "Manufacturer_Part_Number" "BD750L5FP-CE2")
+    (property "Mouser_Part_Number" "755-BD750L5FP-CE2")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=755-BD750L5FP-CE2")
+    (property "RS_Part_Number" "1246489P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/1246489P")
+    (property "Datasheet_Link" "https://www.rohm.com/datasheet/BD750L5FP-C/bd7xxl5fp-c-e")
+)
+
+

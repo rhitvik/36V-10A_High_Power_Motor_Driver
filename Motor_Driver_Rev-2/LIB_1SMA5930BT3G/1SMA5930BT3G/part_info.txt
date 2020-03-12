@@ -1,0 +1,9 @@
+Manufacturer=ON Semiconductor
+PartNumber=1SMA5930BT3G
+PartCategory=Zener Diode
+PackageCategory=Diodes Moulded
+PinCount=2
+Version=1.2
+Released=2017-05-04 08:31:21
+Downloaded=2020-03-03 05:46:03
+3D=Y

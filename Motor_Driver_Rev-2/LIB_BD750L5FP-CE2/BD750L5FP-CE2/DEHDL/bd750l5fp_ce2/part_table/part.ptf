@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'BD750L5FP_CE2'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "ROHM Semiconductor", "BD750L5FP-CE2" (!) = "", "BD750L5FPCE2", "Other", "755-BD750L5FP-CE2", "https://www.mouser.com/Search/Refine.aspx?Keyword=755-BD750L5FP-CE2", "1246489P", "http://uk.rs-online.com/web/p/products/1246489P", "Ultra Low Quiescent Current LDO Regulator: The BD7xxL5FP-C Series are low quiescent regulators featuring 50V absolute maximum voltage, and output voltage accuracy of +/-2%, 500mA output current and 6A (Typ.) current consumption. There regulators are therefore ideal for applications requiring a direct connection to the battery and a low current consumption. Ceramic capacitors can be used for compensation of the output capacitor phase.", "https://www.rohm.com/datasheet/BD750L5FP-C/bd7xxl5fp-c-e"
+END_PART
+
+END.

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AO4421
+D MOSFET P-CH 60V 6.2A 8SOIC
+K
+F http://www.aosmd.com/res/data_sheets/AO4421.pdf
+$ENDCMP
+#
+#End Doc Library
