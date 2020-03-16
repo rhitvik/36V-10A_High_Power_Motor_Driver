@@ -23,12 +23,12 @@ Data Memory Usage 		:	7 bytes/32 bytes	   21.9 % Full
 #include <avr/interrupt.h>
 #include <stdbool.h>
 
-//		            +====+
-//	PB0(PWM Pin-1) |* 	  | PB3 (RESET)
-//	           GND |	  | VCC
+//		        +====+
+//	PB0(PWM Pin-1) |*     | PB3 (RESET)
+//	           GND |      | VCC
 //	PB1(PWM Pin-2) |      | PB2
-//	 			    +====+
-//				Attiny10 Pin out
+//	 	        +====+
+//	           Attiny10 Pin out
 
 volatile uint8_t mode = 1;
 volatile uint8_t ovfCnt = 0;
