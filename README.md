@@ -17,6 +17,10 @@ Design a bidirectional, variable speed / PWM controlled brushed DC motor control
 * Please think thru success criteria of above in a real-world scenario and adjust/optimize accordingly.
 
 ## Circuit
+
+### Scchematic Capture
+![H Bridge](https://github.com/rhitvik/36V-10A_High_Power_Motor_Drawer/blob/master/Screenshot/H_Bridge.PNG)
+
 ### P-Channel 
 MOSFET: AO4421 | MOSFET P-CH 60V 6.2A 8SOIC
 
