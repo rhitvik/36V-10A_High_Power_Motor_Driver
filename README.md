@@ -18,8 +18,8 @@ Design a bidirectional, variable speed / PWM controlled brushed DC motor control
 
 ## Circuit
 
-### Scchematic Capture
-![H Bridge](https://github.com/rhitvik/36V-10A_High_Power_Motor_Drawer/blob/master/Screenshot/H_Bridge.PNG)
+### H-Bridge Design
+![H-Bridge](https://github.com/rhitvik/36V-10A_High_Power_Motor_Drawer/blob/master/Screenshot/H_Bridge.PNG)
 
 ### P-Channel 
 MOSFET: AO4421 | MOSFET P-CH 60V 6.2A 8SOIC
@@ -42,6 +42,14 @@ Zener MMSZ5V1T1G to ensure that heavy spikes do not destroy the transistor gates
 ## Suggested PCB Specifications
 * Everything is SMD except for the terminal blocks. Space efficiency via SMD components whereas terminal blocks require a stronger connection. 
 * 2 Oz Cu PCB recommended. Via Stitch for EMC/EMI considerations and recommended metal enclosures that can also act as heat sinks.
+
+## Code
+[Firmware Code (Developed over Attiny10)](https://github.com/rhitvik/36V-10A_High_Power_Motor_Drawer/blob/master/Code/main.cpp)
+
+## Schematic Capture and Libraries
+[Link to project](https://github.com/rhitvik/36V-10A_High_Power_Motor_Drawer/tree/master/Motor_Driver_Rev-2)
+
+## Download Documentation
 
 ## How the Firmware is written?
 * The PWM is generated in the peripheral using fast non-inverted PWM mode. The microcontroller is at 8MHz and the Prescaler clocks it down to 1MHz in the timer module. The frequency of PWM is 100Hz and the duty cycle increase/decreases 1% every 50ms. 
