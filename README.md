@@ -17,13 +17,13 @@ Design a bidirectional, variable speed / PWM controlled brushed DC motor control
 * Please think thru success criteria of above in a real-world scenario and adjust/optimize accordingly.
 
 ## Circuit
-###P-Channel 
+### P-Channel 
 MOSFET: AO4421 | MOSFET P-CH 60V 6.2A 8SOIC
 
 Hence 2 used in parallel to increase the current sourcing capability to the motor. Also, using 2 MOSFETs in parallel reduces the heating effects as well as drain-source ESR resistance.
 Zener diodes NZ9F10VT5G used to maintain Vgs = 10 V for minimum Drain-Source Resistance, each driven by BC846BLT3G transistor. This is where we apply the PWM pulse.
 
-###N-Channel 
+### N-Channel 
 MOSFET: HUF76609D3ST | MOSFET N-CH 100V 10A DPAK
 Used 1 to sink the rated current coming from the motor. Totem pole arrangement (MMBT3904 and MMBT3906) for driving this transistor used. Resistor configuration a max passage of 50 mA while driving the MOSFET with Vgs = 10 V for minimum Drain-Source Resistance.
 MBR1560SRT Schottky diodes used for commutation-spike protection and freewheeling purposes.
