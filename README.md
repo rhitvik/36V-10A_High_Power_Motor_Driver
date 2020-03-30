@@ -17,14 +17,21 @@ Design a bidirectional, variable speed / PWM controlled brushed DC motor control
 * Please think thru success criteria of above in a real-world scenario and adjust/optimize accordingly.
 
 ## Circuit
-P-Channel MOSFET: AO4421 | MOSFET P-CH 60V 6.2A 8SOIC
+###P-Channel 
+MOSFET: AO4421 | MOSFET P-CH 60V 6.2A 8SOIC
+
 Hence 2 used in parallel to increase the current sourcing capability to the motor. Also, using 2 MOSFETs in parallel reduces the heating effects as well as drain-source ESR resistance.
 Zener diodes NZ9F10VT5G used to maintain Vgs = 10 V for minimum Drain-Source Resistance, each driven by BC846BLT3G transistor. This is where we apply the PWM pulse.
-N-Channel MOSFET: HUF76609D3ST | MOSFET N-CH 100V 10A DPAK
+
+###N-Channel 
+MOSFET: HUF76609D3ST | MOSFET N-CH 100V 10A DPAK
 Used 1 to sink the rated current coming from the motor. Totem pole arrangement (MMBT3904 and MMBT3906) for driving this transistor used. Resistor configuration a max passage of 50 mA while driving the MOSFET with Vgs = 10 V for minimum Drain-Source Resistance.
 MBR1560SRT Schottky diodes used for commutation-spike protection and freewheeling purposes.
 
-STD35P6LLF6, P-channel MOSFET employed for reverse polarity protection and Schottky BZT52C117F keeps its Rds minimized. 
+### Reverse Polarity Protection
+STD35P6LLF6, P-channel MOSFET employed for reverse polarity protection and Schottky BZT52C117F keeps its Rds minimized.
+
+### Linear Regulator
 BD750L5FP-CE2 IC REG LINEAR 5V 500MA TO252-3 to power the microcontroller.
 Zener MMSZ5V1T1G to ensure that heavy spikes do not destroy the transistor gates/PWM  pins. 
 
@@ -35,5 +42,5 @@ Zener MMSZ5V1T1G to ensure that heavy spikes do not destroy the transistor gates
 ## How the Firmware is written?
 * The PWM is generated in the peripheral using fast non-inverted PWM mode. The microcontroller is at 8MHz and the Prescaler clocks it down to 1MHz in the timer module. The frequency of PWM is 100Hz and the duty cycle increase/decreases 1% every 50ms. 
 * Interrupt based timer also keep a track of elapsed time. After ever 5 seconds, the state of the machine is changed and follows the sequence as directed while ensuring that there are no faults.
-The error rate is negligible as the compare registers are double-buffered and the Input capture register value is static.
+* The error rate is negligible as the compare registers are double-buffered and the Input capture register value is static.
 
