@@ -50,6 +50,7 @@ Zener MMSZ5V1T1G to ensure that heavy spikes do not destroy the transistor gates
 [Link to project](https://github.com/rhitvik/36V-10A_High_Power_Motor_Drawer/tree/master/Motor_Driver_Rev-2)
 
 ## Download Documentation
+[Click Here](https://github.com/rhitvik/36V-10A_High_Power_Motor_Drawer/blob/master/Schematic%20and%20Report.DOCX)
 
 ## How the Firmware is written?
 * The PWM is generated in the peripheral using fast non-inverted PWM mode. The microcontroller is at 8MHz and the Prescaler clocks it down to 1MHz in the timer module. The frequency of PWM is 100Hz and the duty cycle increase/decreases 1% every 50ms. 
