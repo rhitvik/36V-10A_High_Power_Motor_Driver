@@ -14,7 +14,7 @@ Design a bidirectional, variable speed / PWM controlled brushed DC motor control
 * Ramp down the motor from 100% forward to 0% over 5 seconds.
 * Ramp up the motor from 0% to 100% reverse over 5 seconds.
 * Ramp down the motor from 100% reverse to 0% over 5 seconds.
-* Please think thru success criteria of above in a real-world scenario and adjust/optimize accordingly.
+* Please think through success criteria of above in a real-world scenario and adjust/optimize accordingly.
 
 ## Circuit
 
