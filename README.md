@@ -1,4 +1,4 @@
-# 36V-10A High Power Motor Drawer
+# 36V-10A High Power Motor Driver
 
 ## About the project
 This project was completed as a part of the fast prototyping EE challenge (To be completed in 3 days) carrying the following Design rules and consideration.
