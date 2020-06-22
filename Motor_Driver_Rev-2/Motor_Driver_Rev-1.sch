@@ -529,7 +529,7 @@ Text GLabel 700  3350 3    50   Input ~ 0
 Motor_IN1
 Text GLabel 2000 3350 3    50   Input ~ 0
 Motor_IN2
-Text GLabel 4950 -1150 2    50   Input ~ 0
+Text GLabel 11550 -1350 2    50   Input ~ 0
 Motor_IN2
 Text GLabel 4550 -4250 2    50   Input ~ 0
 Motor_IN1
@@ -1019,7 +1019,7 @@ Wire Wire Line
 	9850 -1800 10100 -1800
 Text GLabel 11150 -4450 2    50   Input ~ 0
 Motor_IN2
-Text GLabel 11550 -1350 2    50   Input ~ 0
+Text GLabel 4950 -1150 2    50   Input ~ 0
 Motor_IN1
 Wire Wire Line
 	11150 -4450 10950 -4450
@@ -1337,17 +1337,6 @@ Wire Wire Line
 Connection ~ 2000 3150
 Wire Wire Line
 	1750 1350 3050 1350
-$Comp
-L Connector:Conn_01x04_Male J3
-U 1 1 5EA32A8A
-P 6550 3000
-F 0 "J3" H 6658 3281 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 6658 3190 50  0000 C CNN
-F 2 "" H 6550 3000 50  0001 C CNN
-F 3 "~" H 6550 3000 50  0001 C CNN
-	1    6550 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10000 -1550 10000 -1600
 Wire Wire Line
@@ -1547,11 +1536,7 @@ F 3 "" H 7050 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 2900 7050 2900
-Wire Wire Line
 	7050 2900 7050 2800
-Wire Wire Line
-	6750 3200 7050 3200
 Text GLabel 7750 3000 2    50   Input ~ 0
 PWM_Input-1
 Text GLabel 7750 3100 2    50   Input ~ 0
@@ -1614,12 +1599,6 @@ Wire Wire Line
 	7400 3600 7400 3450
 Wire Wire Line
 	7600 3450 7600 3600
-Wire Wire Line
-	6750 3000 7400 3000
-Connection ~ 7400 3000
-Wire Wire Line
-	6750 3100 7600 3100
-Connection ~ 7600 3100
 $Comp
 L 2020-03-05_08-54-35:NZ9F10VT5G CR?
 U 1 1 5E67BCA0
@@ -1692,4 +1671,25 @@ Wire Wire Line
 Connection ~ 2250 -5250
 Wire Wire Line
 	2250 -5250 2450 -5250
+Connection ~ 7600 3100
+Connection ~ 7400 3000
+Wire Wire Line
+	6750 3100 7600 3100
+Wire Wire Line
+	6750 3000 7400 3000
+Wire Wire Line
+	6750 3200 7050 3200
+Wire Wire Line
+	6750 2900 7050 2900
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5EA32A8A
+P 6550 3000
+F 0 "J3" H 6658 3281 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 6658 3190 50  0000 C CNN
+F 2 "" H 6550 3000 50  0001 C CNN
+F 3 "~" H 6550 3000 50  0001 C CNN
+	1    6550 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
